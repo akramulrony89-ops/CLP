@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>হাঁস-মুরগির রোগ নির্দেশিকা | MD Akramul Haque</title>
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gd:#0d3b22;--g:#1a5c38;--gm:#2d8a57;--gl:#4caf77;
+  --gold:#e8a020;--bg:#eef4ee;--card:#fff;
+  --bdr:#c8dfd0;--tx:#192b20;--mt:#5e7a68;
+  --red:#b03020;--blue:#1a5fa8;--purple:#6d2d9a;--ora:#c45000;--teal:#0f7060;
+  --sh:0 2px 16px rgba(13,59,34,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Hind Siliguri',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;font-size:15px}
+header{background:linear-gradient(120deg,var(--gd) 0%,var(--g) 55%,var(--gm) 100%);color:#fff;box-shadow:0 4px 20px rgba(13,59,34,.3)}
+.hdr{max-width:1200px;margin:0 auto;padding:18px 20px 14px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hlogo{width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0}
+.htitle h1{font-size:1.45rem;font-weight:700}
+.htitle p{font-size:.83rem;opacity:.8;margin-top:2px}
+.hbadges{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.hbadge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);border-radius:20px;padding:3px 11px;font-size:.77rem}
+.tabs-bar{background:#fff;border-bottom:2px solid var(--bdr);position:sticky;top:0;z-index:200;box-shadow:0 2px 10px rgba(13,59,34,.08)}
+.tabs-inner{max-width:1200px;margin:0 auto;padding:0 16px;display:flex;gap:2px;overflow-x:auto}
+.tab{padding:13px 19px;border:none;background:none;font-family:'Hind Siliguri',sans-serif;font-size:.92rem;font-weight:600;color:var(--mt);cursor:pointer;border-bottom:3px solid transparent;white-space:nowrap;transition:all .2s}
+.tab.active{color:var(--g);border-bottom-color:var(--g)}
+.tab:hover:not(.active){color:var(--gm)}
+.panel{display:none;max-width:1200px;margin:0 auto;padding:20px 16px 60px}
+.panel.active{display:block}
+.sbar{background:#fff;border:2px solid var(--bdr);border-radius:14px;padding:15px 17px;margin-bottom:18px;display:flex;gap:11px;flex-wrap:wrap;align-items:center;box-shadow:var(--sh)}
+.slbl{font-weight:700;color:var(--g);font-size:.94rem;white-space:nowrap}
+.sinpw{position:relative;flex:1;min-width:200px}
+.sinp{width:100%;padding:10px 38px 10px 13px;border:2px solid var(--bdr);border-radius:10px;font-family:'Hind Siliguri',sans-serif;font-size:.93rem;background:var(--bg);outline:none;transition:border .2s}
+.sinp:focus{border-color:var(--gm);box-shadow:0 0 0 3px rgba(45,138,87,.12)}
+.sico{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--mt);pointer-events:none}
+.sselw{position:relative;min-width:210px}
+.ssel{width:100%;padding:10px 36px 10px 13px;border:2px solid var(--bdr);border-radius:10px;font-family:'Hind Siliguri',sans-serif;font-size:.93rem;background:var(--bg);appearance:none;cursor:pointer;outline:none;transition:border .2s}
+.ssel:focus{border-color:var(--gm)}
+.sarr{position:absolute;right:12px;top:50%;transform:translateY(-50%);pointer-events:none;color:var(--g);font-size:.74rem}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+.chip{padding:6px 14px;border-radius:20px;font-size:.82rem;font-family:'Hind Siliguri',sans-serif;cursor:pointer;border:2px solid;font-weight:600;transition:all .2s;background:#fff}
+.call{border-color:var(--g);color:var(--g)}.call.on{background:var(--g);color:#fff}
+.cv{border-color:#e57373;color:var(--red)}.cv.on{background:#fdecea;border-color:var(--red)}
+.cb{border-color:#64b5f6;color:var(--blue)}.cb.on{background:#e3f2fd;border-color:var(--blue)}
+.cp{border-color:#ce93d8;color:var(--purple)}.cp.on{background:#f3e5f5;border-color:var(--purple)}
+.cn{border-color:#ffb74d;color:var(--ora)}.cn.on{background:#fff3e0;border-color:var(--ora)}
+.co{border-color:#4db6ac;color:var(--teal)}.co.on{background:#e0f2f1;border-color:var(--teal)}
+.stats-row{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:18px}
+.sbox{background:#fff;border:2px solid var(--bdr);border-radius:11px;padding:11px 16px;display:flex;align-items:center;gap:9px;box-shadow:var(--sh)}
+.sbi{font-size:1.35rem}.sbn{font-size:1.35rem;font-weight:700;color:var(--g);line-height:1}.sbl{font-size:.73rem;color:var(--mt);margin-top:2px}
+.rinfo{font-size:.83rem;color:var(--mt);margin-bottom:13px;font-style:italic}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(350px,1fr));gap:17px}
+.dcard{background:var(--card);border-radius:15px;border:2px solid var(--bdr);box-shadow:var(--sh);overflow:hidden;transition:transform .2s,box-shadow .2s}
+.dcard:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(13,59,34,.14)}
+.dcard.hl{border-color:var(--gm);box-shadow:0 0 0 3px rgba(45,138,87,.18),var(--sh)}
+.dhead{padding:13px 17px 11px;cursor:pointer;display:flex;align-items:center;gap:11px}
+.dico{font-size:1.65rem;width:40px;text-align:center;flex-shrink:0}
+.dtitle{font-size:.98rem;font-weight:700;line-height:1.3}
+.dsub{font-size:.77rem;color:var(--mt);margin-top:2px;font-style:italic}
+.dbadge{padding:3px 9px;border-radius:11px;font-size:.72rem;font-weight:700;white-space:nowrap;margin-left:auto;align-self:flex-start;flex-shrink:0}
+.dmeta{display:flex;gap:8px;padding:0 17px 10px;flex-wrap:wrap}
+.dmtag{font-size:.74rem;padding:2px 9px;border-radius:10px;font-weight:600}
+.dtag-high{background:#fdecea;color:var(--red)}
+.dtag-med{background:#fff3e0;color:var(--ora)}
+.dtag-low{background:#e8f5e9;color:#2e7d32}
+.dtag-age{background:#e3f2fd;color:var(--blue)}
+.dbody{padding:0 17px 15px}
+.dexpand{width:100%;background:none;border:none;border-top:1px solid var(--bdr);padding:9px;font-family:'Hind Siliguri',sans-serif;font-size:.82rem;color:var(--g);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:5px;font-weight:700;transition:background .15s}
+.dexpand:hover{background:#f0faf4}
+.dcard.col .dcol{display:none}
+.cs{margin-top:11px}
+.cst{font-size:.77rem;font-weight:700;text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px;display:flex;align-items:center;gap:5px}
+.cbox{background:#f8fdf9;border-left:3px solid var(--gm);border-radius:0 8px 8px 0;padding:7px 11px;font-size:.86rem;line-height:1.65}
+.clist{list-style:none}
+.clist li{font-size:.86rem;padding:2px 0 2px 17px;position:relative;line-height:1.55}
+.clist li::before{content:"▸";position:absolute;left:0;top:2px;font-size:.68rem}
+.tbox{background:#fffdf0;border:1.5px solid #ffe082;border-radius:9px;overflow:hidden}
+.ti{padding:8px 11px;display:flex;gap:9px;border-bottom:1px dashed #ffe082;align-items:flex-start}
+.ti:last-child{border-bottom:none}
+.tiico{font-size:1.05rem;flex-shrink:0;margin-top:1px}
+.tiname{font-weight:700;font-size:.87rem;color:var(--gd)}
+.tidose{font-size:.8rem;color:#666;margin-top:1px}
+.pbox{background:#f0f8f4;border:1.5px solid #a8d8b8;border-radius:8px;padding:8px 11px;font-size:.85rem;line-height:1.65;color:#1a4a2e}
+/* Treatment tabs */
+.ttabs{display:flex;gap:5px;margin-bottom:6px}
+.ttab{padding:4px 12px;border-radius:8px;border:1.5px solid var(--bdr);background:#fff;font-family:'Hind Siliguri',sans-serif;font-size:.78rem;font-weight:700;cursor:pointer;color:var(--mt);transition:all .2s}
+.ttab.act{background:var(--g);color:#fff;border-color:var(--g)}
+/* Category colors */
+.cv2 .dhead{background:linear-gradient(90deg,#fdecea 0%,#fff 80%)}
+.cv2 .dbadge{background:#fdecea;color:var(--red)}
+.cv2 .cst{color:var(--red)}.cv2 .clist li::before{color:var(--red)}
+.cb2 .dhead{background:linear-gradient(90deg,#e3f2fd 0%,#fff 80%)}
+.cb2 .dbadge{background:#e3f2fd;color:var(--blue)}
+.cb2 .cst{color:var(--blue)}.cb2 .clist li::before{color:var(--blue)}
+.cp2 .dhead{background:linear-gradient(90deg,#f3e5f5 0%,#fff 80%)}
+.cp2 .dbadge{background:#f3e5f5;color:var(--purple)}
+.cp2 .cst{color:var(--purple)}.cp2 .clist li::before{color:var(--purple)}
+.cn2 .dhead{background:linear-gradient(90deg,#fff3e0 0%,#fff 80%)}
+.cn2 .dbadge{background:#fff3e0;color:var(--ora)}
+.cn2 .cst{color:var(--ora)}.cn2 .clist li::before{color:var(--ora)}
+.co2 .dhead{background:linear-gradient(90deg,#e0f2f1 0%,#fff 80%)}
+.co2 .dbadge{background:#e0f2f1;color:var(--teal)}
+.co2 .cst{color:var(--teal)}.co2 .clist li::before{color:var(--teal)}
+.nores{text-align:center;padding:55px 20px;color:var(--mt)}
+.nores .ni{font-size:3rem;margin-bottom:10px}
+/* Vaccine/Drug tables */
+.vsec{margin-bottom:30px}
+.vsec h2{font-size:1.1rem;font-weight:700;color:var(--gd);margin-bottom:12px;padding-left:10px;border-left:4px solid var(--gm)}
+.tblw{overflow-x:auto;border-radius:12px;box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:.86rem}
+thead tr{background:var(--g);color:#fff}
+thead th{padding:11px 13px;text-align:left;font-weight:600;font-size:.84rem}
+tbody tr{border-bottom:1px solid #e8f0ea}
+tbody tr:last-child{border-bottom:none}
+tbody tr:nth-child(even){background:#f7fbf8}
+tbody td{padding:9px 13px;line-height:1.5;vertical-align:top}
+.vday{font-weight:700;color:var(--gd);white-space:nowrap}
+.vbg{display:inline-block;padding:2px 8px;border-radius:9px;font-size:.71rem;font-weight:700}
+.vbl{background:#e8f5e9;color:#2e7d32}
+.vbk{background:#fce4ec;color:#ad1457}
+.vbb{background:#e3f2fd;color:#1565c0}
+.dsrch{width:100%;padding:10px 15px;border:2px solid var(--bdr);border-radius:10px;font-family:'Hind Siliguri',sans-serif;font-size:.93rem;margin-bottom:13px;outline:none;background:var(--bg)}
+.dsrch:focus{border-color:var(--gm)}
+.dtg{display:inline-block;padding:2px 8px;border-radius:9px;font-size:.71rem;font-weight:700;margin-left:3px}
+.tg-ab{background:#e3f2fd;color:#1565c0}
+.tg-sp{background:#e8f5e9;color:#2e7d32}
+.tg-ds{background:#fff3e0;color:#e65100}
+.tg-vt{background:#f3e5f5;color:#6a1b9a}
+.tg-pr{background:#e0f2f1;color:#00695c}
+/* Guide */
+.qgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:15px}
+.qcard{background:#fff;border:2px solid var(--bdr);border-radius:13px;padding:17px;box-shadow:var(--sh)}
+.qcard h3{font-size:.97rem;font-weight:700;color:var(--gd);margin-bottom:11px;display:flex;align-items:center;gap:7px}
+.qstep{display:flex;gap:9px;margin-bottom:9px;align-items:flex-start;padding:7px 9px;border-radius:8px;background:#f8fdf9}
+.qnum{width:23px;height:23px;border-radius:50%;background:var(--g);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.77rem;font-weight:700;flex-shrink:0;min-width:23px}
+.qtxt{font-size:.86rem;line-height:1.55}
+.qcard.red{border-left:4px solid var(--red);background:#fdecea}
+.qcard.red h3{color:var(--red)}
+.qcard.grn{border-left:4px solid var(--gm);background:#f0faf4}
+.qcard.blu{border-left:4px solid var(--blue);background:#e8f4fd}
+/* AI */
+.aiwrap{background:#fff;border:2px solid var(--bdr);border-radius:15px;padding:19px;box-shadow:var(--sh);margin-bottom:18px}
+.aihead{display:flex;align-items:center;gap:11px;margin-bottom:14px}
+.aiav{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--g),var(--gm));display:flex;align-items:center;justify-content:center;font-size:19px;flex-shrink:0}
+.aiht{font-size:.98rem;font-weight:700;color:var(--gd)}
+.aihs{font-size:.79rem;color:var(--mt)}
+.aichat{min-height:190px;max-height:370px;overflow-y:auto;background:#f8fdf9;border-radius:11px;padding:13px;margin-bottom:13px;display:flex;flex-direction:column;gap:9px}
+.cmsg{max-width:88%;padding:9px 13px;border-radius:11px;font-size:.87rem;line-height:1.6}
+.cuser{background:var(--g);color:#fff;align-self:flex-end;border-bottom-right-radius:3px}
+.cbot{background:#fff;border:1.5px solid var(--bdr);align-self:flex-start;border-bottom-left-radius:3px}
+.cbot strong{color:var(--gd)}
+.airow{display:flex;gap:9px}
+.aiinp{flex:1;padding:10px 15px;border:2px solid var(--bdr);border-radius:10px;font-family:'Hind Siliguri',sans-serif;font-size:.92rem;outline:none;transition:border .2s}
+.aiinp:focus{border-color:var(--gm)}
+.aibtn{padding:10px 20px;background:var(--g);color:#fff;border:none;border-radius:10px;font-family:'Hind Siliguri',sans-serif;font-size:.88rem;font-weight:700;cursor:pointer;transition:background .2s;white-space:nowrap}
+.aibtn:hover{background:var(--gm)}.aibtn:disabled{background:#aaa;cursor:not-allowed}
+.qqs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:11px}
+.qq{padding:5px 12px;background:#f0faf4;border:1.5px solid #a8d8b8;border-radius:18px;font-size:.79rem;cursor:pointer;font-family:'Hind Siliguri',sans-serif;color:var(--gd);font-weight:600;transition:all .2s}
+.qq:hover{background:var(--g);color:#fff;border-color:var(--g)}
+.typing{display:flex;gap:4px;align-items:center;padding:9px 13px}
+.typing span{width:7px;height:7px;border-radius:50%;background:var(--gm);animation:bou .9s infinite;display:inline-block}
+.typing span:nth-child(2){animation-delay:.2s}
+.typing span:nth-child(3){animation-delay:.4s}
+@keyframes bou{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-8px)}}
+.pbtn{padding:9px 17px;background:#fff;border:2px solid var(--g);border-radius:10px;font-family:'Hind Siliguri',sans-serif;font-size:.87rem;font-weight:700;color:var(--g);cursor:pointer;display:flex;align-items:center;gap:6px;transition:all .2s}
+.pbtn:hover{background:var(--g);color:#fff}
+footer{background:var(--gd);color:rgba(255,255,255,.75);text-align:center;padding:15px;font-size:.81rem}
+footer strong{color:#ffd166}
+@media(max-width:700px){.dgrid,.qgrid{grid-template-columns:1fr}.hbadges{display:none}.htitle h1{font-size:1.15rem}.tab{padding:11px 13px;font-size:.81rem}}
+@media print{
+  header,.tabs-bar,.sbar,.chips,.stats-row,.dexpand,.pbtn,.aiwrap,.nores,.rinfo{display:none!important}
+  .panel{display:block!important;padding:0}
+  .dcard.col .dcol{display:block!important}
+  .dcard{break-inside:avoid;box-shadow:none;border:1px solid #ccc;margin-bottom:10px}
+  body{font-size:12px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="hdr">
+  <div class="hlogo">🐔</div>
+  <div class="htitle">
+    <h1>হাঁস-মুরগির রোগ নির্দেশিকা</h1>
+    <p>CLP — Certificate in Livestock &amp; Poultry | সম্পূর্ণ বাংলা রোগ-চিকিৎসা-প্রতিরোধ রেফারেন্স</p>
+  </div>
+  <div class="hbadges">
+    <span class="hbadge">👨‍⚕️ MD Akramul Haque, BCS (Livestock)</span>
+    <span class="hbadge">🏛️ Lecturer, ILST Gaibandha</span>
+    <span class="hbadge">📞 হেল্পলাইন: 16358</span>
+  </div>
+</div>
+</header>
+
+<div class="tabs-bar">
+<div class="tabs-inner">
+  <button class="tab active" onclick="showTab('diseases',this)">🦠 রোগ সমূহ</button>
+  <button class="tab" onclick="showTab('vaccine',this)">💉 টিকা সূচি</button>
+  <button class="tab" onclick="showTab('drugs',this)">💊 ওষুধ তালিকা</button>
+  <button class="tab" onclick="showTab('guide',this)">📋 দ্রুত গাইড</button>
+  <button class="tab" onclick="showTab('ai',this)">🤖 AI সহকারী</button>
+</div>
+</div>
+
+<!-- DISEASES PANEL -->
+<div class="panel active" id="panel-diseases">
+<div class="sbar">
+  <span class="slbl">🔍 রোগ খুঁজুন:</span>
+  <div class="sinpw">
+    <input class="sinp" id="sinp" type="text" placeholder="নাম, লক্ষণ বা কারণ লিখুন...">
+    <span class="sico">🔎</span>
+  </div>
+  <div class="sselw">
+    <select class="ssel" id="ddrop" onchange="pickD(this.value)">
+      <option value="">— তালিকা থেকে বেছে নিন —</option>
+    </select>
+    <span class="sarr">▼</span>
+  </div>
+  <button class="pbtn" onclick="window.print()">🖨️ প্রিন্ট</button>
+</div>
+<div class="chips" id="chips">
+  <button class="chip call on" onclick="setcat('all',this)">সব রোগ</button>
+  <button class="chip cv" onclick="setcat('virus',this)">🦠 ভাইরাস</button>
+  <button class="chip cb" onclick="setcat('bacteria',this)">🔬 ব্যাকটেরিয়া</button>
+  <button class="chip cp" onclick="setcat('parasite',this)">🪱 পরজীবী</button>
+  <button class="chip cn" onclick="setcat('nutrition',this)">🌿 পুষ্টিঘাটতি</button>
+  <button class="chip co" onclick="setcat('other',this)">🍄 অন্যান্য</button>
+</div>
+<div class="stats-row" id="srow"></div>
+<div class="rinfo" id="rinfo"></div>
+<div class="dgrid" id="dgrid"></div>
+<div class="nores" id="nores" style="display:none"><div class="ni">🔍</div><p>কোনো রোগ পাওয়া যায়নি।</p></div>
+</div>
+
+<!-- VACCINE PANEL -->
+<div class="panel" id="panel-vaccine">
+<div class="vsec">
+<h2>🐥 ব্রয়লার মুরগির টিকা সূচি</h2>
+<div class="tblw"><table>
+<thead><tr><th>বয়স</th><th>রোগ</th><th>টিকার নাম</th><th>প্রয়োগ পদ্ধতি</th><th>মাত্রা</th><th>ধরন</th></tr></thead>
+<tbody>
+<tr><td class="vday">১ম দিন</td><td>মারেক্স রোগ</td><td>Mareks Disease Vaccine</td><td>SC ইনজেকশন</td><td>০.২ মি.লি./বাচ্চা</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">৫-৭ দিন</td><td>রাণীক্ষেত</td><td>BCRDV / RDV (F-strain)</td><td>চোখে ফোঁটা বা নাকে</td><td>১ ফোঁটা/বাচ্চা</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">১৪-১৬ দিন</td><td>গামবোরো (IBD)</td><td>Gumboro Live Vaccine</td><td>পানিতে মিশিয়ে</td><td>নির্দেশমতো</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">১৮-২০ দিন</td><td>রাণীক্ষেত (বুস্টার)</td><td>RDV Booster</td><td>চোখে ফোঁটা</td><td>১ ফোঁটা/বাচ্চা</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">২১ দিন</td><td>গামবোরো (বুস্টার)</td><td>Gumboro Live Vaccine</td><td>পানিতে মিশিয়ে</td><td>নির্দেশমতো</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">২৮ দিন</td><td>ফাউল কলেরা</td><td>Fowl Cholera Vaccine</td><td>পাখার নিচে ইনজেকশন</td><td>১ মি.লি./পাখি</td><td><span class="vbg vbk">কিলড</span></td></tr>
+</tbody></table></div></div>
+
+<div class="vsec">
+<h2>🐓 লেয়ার মুরগির টিকা সূচি</h2>
+<div class="tblw"><table>
+<thead><tr><th>বয়স</th><th>রোগ</th><th>টিকার নাম</th><th>প্রয়োগ পদ্ধতি</th><th>মাত্রা</th><th>ধরন</th></tr></thead>
+<tbody>
+<tr><td class="vday">১ম দিন</td><td>মারেক্স রোগ</td><td>Mareks Disease Vaccine</td><td>SC ইনজেকশন</td><td>০.২ মি.লি.</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">৫-৭ দিন</td><td>রাণীক্ষেত</td><td>BCRDV (F-strain)</td><td>চোখে ফোঁটা</td><td>১ ফোঁটা</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">১৪-১৬ দিন</td><td>গামবোরো</td><td>Gumboro Live</td><td>পানিতে মিশিয়ে</td><td>নির্দেশমতো</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">২১ দিন</td><td>গামবোরো (বুস্টার)</td><td>Gumboro Live</td><td>পানিতে মিশিয়ে</td><td>নির্দেশমতো</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">২৫-২৮ দিন</td><td>ইনফেকশাস ব্রংকাইটিস</td><td>IB Vaccine (H120)</td><td>চোখে ফোঁটা</td><td>১ ফোঁটা</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">৩০ দিন</td><td>সন্তরা (ফাউল পক্স)</td><td>Fowl Pox Vaccine</td><td>Wing Web</td><td>নির্দেশমতো</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+<tr><td class="vday">৪৫ দিন</td><td>রাণীক্ষেত (বুস্টার)</td><td>RDV Killed</td><td>IM ইনজেকশন</td><td>০.৫ মি.লি.</td><td><span class="vbg vbk">কিলড</span></td></tr>
+<tr><td class="vday">৬০ দিন</td><td>ফাউল কলেরা (১ম)</td><td>Fowl Cholera Vaccine</td><td>পাখার নিচে</td><td>১ মি.লি.</td><td><span class="vbg vbb">ব্যাকটেরিয়াল</span></td></tr>
+<tr><td class="vday">৭৫ দিন</td><td>ফাউল কলেরা</td><td>Fowl Cholera Vaccine</td><td>পাখার নিচে</td><td>১ মি.লি.</td><td><span class="vbg vbb">ব্যাকটেরিয়াল</span></td></tr>
+<tr><td class="vday">৯০ দিন</td><td>ফাউল কলেরা (বুস্টার)</td><td>Fowl Cholera Vaccine</td><td>পাখার নিচে</td><td>১ মি.লি.</td><td><span class="vbg vbb">ব্যাকটেরিয়াল</span></td></tr>
+<tr><td class="vday">১০৫-১১২ দিন</td><td>রাণীক্ষেত (প্রি-লেয়িং)</td><td>RDV Killed</td><td>IM ইনজেকশন</td><td>০.৫ মি.লি.</td><td><span class="vbg vbk">কিলড</span></td></tr>
+<tr><td class="vday">প্রতি বছর</td><td>সন্তরা (পক্স) বুস্টার</td><td>Fowl Pox Vaccine</td><td>Wing Web</td><td>নির্দেশমতো</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+</tbody></table></div></div>
+
+<div class="vsec">
+<h2>🦆 হাঁসের টিকা সূচি</h2>
+<div class="tblw"><table>
+<thead><tr><th>বয়স</th><th>রোগ</th><th>টিকার নাম</th><th>প্রয়োগ পদ্ধতি</th><th>মাত্রা</th><th>ধরন</th></tr></thead>
+<tbody>
+<tr><td class="vday">২ মাস</td><td>ফাউল কলেরা</td><td>Fowl Cholera Vaccine</td><td>বুকের চামড়ার নিচে</td><td>১ মি.লি.</td><td><span class="vbg vbb">ব্যাকটেরিয়াল</span></td></tr>
+<tr><td class="vday">৬ মাস</td><td>ফাউল কলেরা (বুস্টার)</td><td>Fowl Cholera Vaccine</td><td>বুকের চামড়ার নিচে</td><td>১ মি.লি.</td><td><span class="vbg vbb">ব্যাকটেরিয়াল</span></td></tr>
+<tr><td class="vday">প্রতি বছর</td><td>ডাক প্লেগ</td><td>Duck Plague Vaccine</td><td>SC ইনজেকশন</td><td>নির্দেশমতো</td><td><span class="vbg vbl">লাইভ</span></td></tr>
+</tbody></table></div></div>
+
+<div class="vsec">
+<h2>⚠️ টিকা সংক্রান্ত গুরুত্বপূর্ণ নিয়ম</h2>
+<div class="qgrid" style="margin-top:10px">
+<div class="qcard red">
+<h3>❌ যা করা যাবে না</h3>
+<div class="qstep"><div class="qnum">১</div><div class="qtxt">অসুস্থ মুরগিকে টিকা দেওয়া যাবে না</div></div>
+<div class="qstep"><div class="qnum">২</div><div class="qtxt">যন্ত্রপাতি রাসায়নিক দিয়ে পরিষ্কার করা যাবে না</div></div>
+<div class="qstep"><div class="qnum">৩</div><div class="qtxt">গুলানো টিকা পুনরায় সংরক্ষণ করা যাবে না</div></div>
+<div class="qstep"><div class="qnum">৪</div><div class="qtxt">মেয়াদোত্তীর্ণ বা রোদে রাখা টিকা ব্যবহার করা যাবে না</div></div>
+<div class="qstep"><div class="qnum">৫</div><div class="qtxt">ক্লোরিনযুক্ত পানিতে লাইভ ভ্যাকসিন মেশাবেন না</div></div>
+</div>
+<div class="qcard grn">
+<h3>✅ যা করতে হবে</h3>
+<div class="qstep"><div class="qnum">১</div><div class="qtxt">রেফ্রিজারেটরে ২°-৮°C তাপমাত্রায় সংরক্ষণ করুন</div></div>
+<div class="qstep"><div class="qnum">২</div><div class="qtxt">থার্মোকোল বাক্সে বরফ দিয়ে পরিবহন করুন</div></div>
+<div class="qstep"><div class="qnum">৩</div><div class="qtxt">গুলানোর পর ১-১.৫ ঘণ্টার মধ্যে ব্যবহার শেষ করুন</div></div>
+<div class="qstep"><div class="qnum">৪</div><div class="qtxt">কৃমিনাশক দেওয়ার ৩ দিন পর টিকা দিন</div></div>
+<div class="qstep"><div class="qnum">৫</div><div class="qtxt">টিকার বয়স অনুযায়ী সঠিক সময়ে প্রয়োগ নিশ্চিত করুন</div></div>
+</div>
+<div class="qcard blu">
+<h3>🧪 ফিউমিগেশন (ধোঁয়াছাড়া)</h3>
+<div class="qstep"><div class="qnum">১</div><div class="qtxt">প্রতি ২.৮ ঘনমিটারে ৬ গ্রাম KMnO₄ + ১২০ মি.লি. ফরমালিন ৪০%</div></div>
+<div class="qstep"><div class="qnum">২</div><div class="qtxt">ফিউমিগেশনের আগে দরজা-জানালা, ভেন্টিলেটর বন্ধ রাখুন</div></div>
+<div class="qstep"><div class="qnum">৩</div><div class="qtxt">ডিম সেতার ২৪-৪৮ ঘণ্টার মধ্যে ফিউমিগেশন করা যাবে না</div></div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- DRUGS PANEL -->
+<div class="panel" id="panel-drugs">
+<h2 style="font-size:1.1rem;font-weight:700;color:var(--gd);margin-bottom:14px;padding-left:10px;border-left:4px solid var(--gm)">💊 পোল্ট্রি ওষুধের সম্পূর্ণ তালিকা</h2>
+<input class="dsrch" id="dsrch" type="text" placeholder="ওষুধের নাম, গ্রুপ বা ব্যবহার লিখুন...">
+<div class="tblw"><table>
+<thead><tr><th>বাণিজ্যিক নাম</th><th>কার্যকরী উপাদান</th><th>ব্যবহার</th><th>মাত্রা</th><th>সময়কাল</th><th>ধরন</th></tr></thead>
+<tbody id="drugTbody"></tbody>
+</table></div>
+</div>
+
+<!-- GUIDE PANEL -->
+<div class="panel" id="panel-guide">
+<div class="qgrid">
+<div class="qcard red">
+<h3>🚨 জরুরি পরিস্থিতি — কী করবেন?</h3>
+<div class="qstep"><div class="qnum">১</div><div class="qtxt">হঠাৎ অনেক মুরগি মারা যাচ্ছে → AI সন্দেহ → অবিলম্বে উপজেলা প্রাণিসম্পদ অফিসে জানান (16358)</div></div>
+<div class="qstep"><div class="qnum">২</div><div class="qtxt">রক্ত পায়খানা → কক্সিডিওসিস → Amprolium বা Toltrazuril তাৎক্ষণিক শুরু</div></div>
+<div class="qstep"><div class="qnum">৩</div><div class="qtxt">শ্বাসকষ্ট + ঘড়ঘড় → রাণীক্ষেত/CRD → Antiviral + Antibiotic শুরু করুন</div></div>
+<div class="qstep"><div class="qnum">৪</div><div class="qtxt">মৃত মুরগি আলাদা করুন। মৃতদেহ পুড়িয়ে বা গভীরে পুঁতে ফেলুন।</div></div>
+<div class="qstep"><div class="qnum">৫</div><div class="qtxt">খামারে জীবাণুনাশক (Timsen ১ গ্রাম/লিটার) স্প্রে করুন</div></div>
+</div>
+<div class="qcard grn">
+<h3>✅ দৈনিক ব্যবস্থাপনা চেকলিস্ট</h3>
+<div class="qstep"><div class="qnum">১</div><div class="qtxt">প্রতিদিন সকালে মুরগির সংখ্যা গণনা করুন, মৃত্যু রেকর্ড করুন</div></div>
+<div class="qstep"><div class="qnum">২</div><div class="qtxt">পানির পাত্র প্রতিদিন পরিষ্কার করুন ও Acidifier দিন</div></div>
+<div class="qstep"><div class="qnum">৩</div><div class="qtxt">লিটার সর্বদা শুষ্ক রাখুন, ভেজা লিটার সঙ্গে সঙ্গে পরিবর্তন করুন</div></div>
+<div class="qstep"><div class="qnum">৪</div><div class="qtxt">ঘরের তাপমাত্রা, বায়ু চলাচল ও আলো পরীক্ষা করুন</div></div>
+<div class="qstep"><div class="qnum">৫</div><div class="qtxt">বহিরাগত লোক ও যানবাহনের প্রবেশ নিয়ন্ত্রণ করুন</div></div>
+</div>
+<div class="qcard blu">
+<h3>💧 পানি ব্যবস্থাপনা</h3>
+<div class="qstep"><div class="qnum">১</div><div class="qtxt">Acidifier (Hameco pH): ১ মি.লি./লিটার — pH কমিয়ে জীবাণু ধ্বংস করে</div></div>
+<div class="qstep"><div class="qnum">২</div><div class="qtxt">গরমে Electrolyte (Electromin): ১ গ্রাম/২ লিটার</div></div>
+<div class="qstep"><div class="qnum">৩</div><div class="qtxt">অ্যান্টিবায়োটিকের সাথে Liver Tonic (Liva Vit) দিন</div></div>
+<div class="qstep"><div class="qnum">৪</div><div class="qtxt">ক্লোরিনযুক্ত পানিতে লাইভ ভ্যাকসিন মেশাবেন না</div></div>
+</div>
+<div class="qcard">
+<h3>🪱 কৃমিনাশক সূচি</h3>
+<div class="qstep"><div class="qnum">১ম</div><div class="qtxt">৬০ দিন বয়সে প্রথম কৃমিনাশক (Piperazine বা Levamisole)</div></div>
+<div class="qstep"><div class="qnum">২য়</div><div class="qtxt">১২০ দিন বয়সে দ্বিতীয় কৃমিনাশক</div></div>
+<div class="qstep"><div class="qnum">🔄</div><div class="qtxt">লিটারে পালনে ডিমপাড়া অবস্থায় প্রতি ৩০ দিনে একবার</div></div>
+<div class="qstep"><div class="qnum">⚠️</div><div class="qtxt">কৃমিনাশকের ৩ দিন পর টিকা দিন। বাচ্চা ও বড় মুরগি আলাদা রাখুন।</div></div>
+</div>
+<div class="qcard">
+<h3>🌡️ ব্রুডিং তাপমাত্রা</h3>
+<div class="qstep"><div class="qnum">১-৭</div><div class="qtxt">৩৫°C (ব্রুডারের নিচে)</div></div>
+<div class="qstep"><div class="qnum">২য়</div><div class="qtxt">৩২°C (২য় সপ্তাহ)</div></div>
+<div class="qstep"><div class="qnum">৩য়</div><div class="qtxt">২৯°C (৩য় সপ্তাহ)</div></div>
+<div class="qstep"><div class="qnum">৪র্থ+</div><div class="qtxt">২৬°C বা ঘরের তাপমাত্রা</div></div>
+</div>
+<div class="qcard">
+<h3>🥚 ডিম উৎপাদন কমার কারণ ও প্রতিকার</h3>
+<div class="qstep"><div class="qnum">১</div><div class="qtxt">রাণীক্ষেত, IB, গামবোরো → ভাইরাস → টিকা + Antiviral</div></div>
+<div class="qstep"><div class="qnum">২</div><div class="qtxt">Ca/Vit-D ঘাটতি → খোসা পাতলা → Vit-AD3E সরবরাহ</div></div>
+<div class="qstep"><div class="qnum">৩</div><div class="qtxt">তীব্র গরম/ঠান্ডা → পরিবেশ নিয়ন্ত্রণ করুন</div></div>
+<div class="qstep"><div class="qnum">৪</div><div class="qtxt">অনিয়মিত আলো → ১৬ ঘণ্টা আলো নিশ্চিত করুন</div></div>
+</div>
+<div class="qcard red">
+<h3>🦠 জুনোটিক রোগ — মানুষেও ছড়ায়!</h3>
+<div class="qstep"><div class="qnum">AI</div><div class="qtxt">এভিয়ান ইনফ্লুয়েঞ্জা H5N1 → মানুষে মারাত্মক ক্ষতি করে</div></div>
+<div class="qstep"><div class="qnum">TB</div><div class="qtxt">Avian Tuberculosis → মানুষেও সংক্রমিত হতে পারে</div></div>
+<div class="qstep"><div class="qnum">✋</div><div class="qtxt">আক্রান্ত মুরগি ধরার পর হাত সাবান দিয়ে ধুন। গ্লাভস ও মাস্ক পরুন।</div></div>
+<div class="qstep"><div class="qnum">📞</div><div class="qtxt">জরুরি হেল্পলাইন: <strong>16358</strong> (DLS Bangladesh)</div></div>
+</div>
+<div class="qcard">
+<h3>📏 জায়গার প্রয়োজনীয়তা</h3>
+<div class="qstep"><div class="qnum">ব্রয়লার</div><div class="qtxt">প্রতি বর্গফুটে বড় হলে ৪-৫টি</div></div>
+<div class="qstep"><div class="qnum">লেয়ার</div><div class="qtxt">কেইজে প্রতি বর্গফুটে ৩-৪টি</div></div>
+<div class="qstep"><div class="qnum">সোনালি</div><div class="qtxt">প্রতি বর্গফুটে ২-৩টি</div></div>
+<div class="qstep"><div class="qnum">⚠️</div><div class="qtxt">গাদাগাদি হলে ক্যানিবালিজম ও রোগের প্রাদুর্ভাব বাড়ে</div></div>
+</div>
+</div>
+</div>
+
+<!-- AI PANEL -->
+<div class="panel" id="panel-ai">
+<div class="aiwrap">
+  <div class="aihead">
+    <div class="aiav">🤖</div>
+    <div><div class="aiht">পোল্ট্রি AI সহকারী</div><div class="aihs">রোগ, চিকিৎসা ও ব্যবস্থাপনা বিষয়ে বাংলায় জিজ্ঞেস করুন</div></div>
+  </div>
+  <div class="qqs">
+    <button class="qq" onclick="askQ('রাণীক্ষেত রোগের লক্ষণ কী কী?')">রাণীক্ষেত লক্ষণ</button>
+    <button class="qq" onclick="askQ('মুরগির রক্ত পায়খানা হলে কী করব?')">রক্ত পায়খানা</button>
+    <button class="qq" onclick="askQ('গামবোরো রোগের চিকিৎসা কী?')">গামবোরো চিকিৎসা</button>
+    <button class="qq" onclick="askQ('মুরগির ডিম উৎপাদন কমে গেলে কী করব?')">ডিম কমার কারণ</button>
+    <button class="qq" onclick="askQ('পোল্ট্রিতে কৃমিনাশক কখন দিতে হয়?')">কৃমিনাশক সময়</button>
+    <button class="qq" onclick="askQ('বার্ড ফ্লু হলে কী করতে হবে?')">বার্ড ফ্লু</button>
+    <button class="qq" onclick="askQ('মুরগির বাচ্চা ঠান্ডায় গাদা হয়ে থাকলে কী করব?')">বাচ্চার যত্ন</button>
+    <button class="qq" onclick="askQ('মুরগির ঘাড় বাঁকা হয়ে গেলে কোন রোগ?')">ঘাড় বাঁকা রোগ</button>
+  </div>
+  <div class="aichat" id="aichat">
+    <div class="cmsg cbot">আস্সালামু আলাইকুম! আমি পোল্ট্রি AI সহকারী। হাঁস-মুরগির রোগ, চিকিৎসা, টিকা ও ব্যবস্থাপনা বিষয়ে যেকোনো প্রশ্ন করুন। আমি বাংলায় সাহায্য করব ইনশাআল্লাহ! 🐔</div>
+  </div>
+  <div class="airow">
+    <input class="aiinp" id="aiinp" type="text" placeholder="প্রশ্ন লিখুন... যেমন: রাণীক্ষেত হলে কী ওষুধ দেব?">
+    <button class="aibtn" id="aibtn" onclick="sendAI()">পাঠান ➤</button>
+  </div>
+</div>
+</div>
+
+<footer>
+  তৈরি করেছেন: <strong>MD Akramul Haque</strong> | BCS (Livestock) | Lecturer, ILST Gaibandha | প্রাণিসম্পদ হেল্পলাইন: <strong>16358</strong>
+</footer>
+
+<script>
+/* ====== DISEASE DATA ====== */
+const D=[
+ {id:"ranixet",name:"রাণীক্ষেত রোগ",en:"Newcastle Disease (ND)",cat:"virus",badge:"ভাইরাস",icon:"🦠",
+  sev:"high",age:"সকল বয়সে",mort:"৫০-১০০%",
+  cause:"Paramyxo virus (ND virus) — শ্বাসতন্ত্র, পাচনতন্ত্র ও স্নায়ুতন্ত্রকে একসাথে আক্রমণ করে।",
+  spread:["আক্রান্ত মুরগির সরাসরি সংস্পর্শ","পায়খানা ও হাঁচির মাধ্যমে","খাবার পানির মাধ্যমে","পোশাক, জুতা ও যন্ত্রপাতির মাধ্যমে","বাতাসের ধুলিকণার মাধ্যমে"],
+  sym:["নিমুনিয়া, সাদা ডায়েরিয়া, মাথা ঝুলে পড়া","উচ্চ মৃত্যুহার (৫০%-এরও বেশি)","তীব্র শ্বাসতান্ত্রিক জটিলতা","ঘাড় বাঁকা — মাথা পিঠের উপর রাখা, পাখা ঝুলে পড়া (Torticolis)","সাদা পায়খানা বা সবুজ-হলুদ মিশ্রিত পায়খানা","ডিমের খোসাহীন বা পাতলা খোসার ডিম"],
+  pm:["প্রোভেন্ট্রিকুলাস ও গিজার্ডে ক্ষুদ্র রক্তক্ষরণ (Petechial haemorrhage)","ক্ষুদ্রান্ত্রে বোতামের মতো নেক্রোটিক আলসার (Button like ulcer)","শ্বাসনালিতে জমাট রক্ত"],
+  treat:[{name:"Ranovir Powder (Antiviral)",dose:"১ গ্রাম/২ লি. পানিতে, দিনে ২ বার, ৫ দিন",ic:"💊"},{name:"Enrocin / Enflox-Vet (Enrofloxacin 10%)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💉"},{name:"Acigent Vet 20 (Gentamycin)",dose:"১ গ্রাম/২-৪ লি. পানিতে, ৫ দিন",ic:"💉"},{name:"GPC-8 / Timsen (জীবাণুনাশক স্প্রে)",dose:"GPC-8: ৫ মি.লি./লিটার স্প্রে, প্রতিদিন",ic:"🧴"}],
+  alt:[{name:"Levomax Vet / Levoxin (Levofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Immolyte / Immunocare (Immuno-stimulant)",dose:"১ মি.লি./১-২ লিটার, ৫ দিন",ic:"💉"},{name:"CND Plus Sol. (Silo — ND-specific Phytogenic)",dose:"চিকিৎসায় ২ মি.লি./লিটার পানিতে",ic:"🌿"},{name:"Electromin / ORS Gold (Electrolyte)",dose:"১ গ্রাম/২ লিটার পানিতে, ৪-৫ দিন",ic:"💧"}],
+  prev:"টিকা সূচি কঠোরভাবে মেনে চলুন। ৫-৭ দিনে BCRDV, ১৮-২০ দিনে বুস্টার।",
+  kw:["রাণীক্ষেত","newcastle","nd","paramyxo","ঘাড় বাঁকা","torticolis"]},
+
+ {id:"fowlpox",name:"সন্তরা (ফাউল পক্স)",en:"Avian Pox / Chicken Pox",cat:"virus",badge:"ভাইরাস",icon:"🦠",
+  sev:"med",age:"সকল বয়সে",mort:"মৃত্যুহার কম",
+  cause:"Avipox Virus (Fowl Pox) — সকল বয়সের মুরগিতে হতে পারে। পোকামাকড়ের মাধ্যমে ছড়ায়।",
+  spread:["সংক্রমিত মুরগির সরাসর স্পর্শে","পোকামাকড়ের কামড়ে (mosquito)"],
+  sym:["মাথার ঝুঁটি, কানের লতি, গলার ঝুঁটি, চোখের পাতা ও ঠোঁটের পাশে গুটি","চোখে হলে চোখ বন্ধ হয়ে অন্ধ হয়ে মারা যায়","Wet form — গলার ভেতরে হলে শ্বাসকষ্ট"],
+  pm:[],
+  treat:[{name:"Ranovir Powder (Antiviral)",dose:"১ গ্রাম/২ লি. পানিতে, দিনে ২ বার, ৫ দিন",ic:"💊"},{name:"Cotra Vet (Chlortetracycline)",dose:"১ গ্রাম/লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Viodin Vet (Antiseptic)",dose:"১০ মি.লি./লিটার পানিতে ক্ষতে লাগান",ic:"🧴"},{name:"Timsen Powder (জীবাণুনাশক)",dose:"স্প্রে আকারে ব্যবহার",ic:"🧴"}],
+  alt:[],
+  prev:"৩০ দিনে প্রথম Pox Vaccine (Wing Web পদ্ধতিতে)। এরপর বছরে একবার বুস্টার।",
+  kw:["সন্তরা","ফাউল পক্স","fowl pox","chicken pox","গুটি","avipox","পক্স"]},
+
+ {id:"gumboro",name:"গামবোরো রোগ (IBD)",en:"Infectious Bursal Disease (IBD)",cat:"virus",badge:"ভাইরাস",icon:"🦠",
+  sev:"high",age:"০-৮ সপ্তাহ",mort:"২০-৩০%",
+  cause:"Birna Virus (IBD Virus) — শুধুমাত্র অল্পবয়সী মুরগিতে (০-৮ সপ্তাহ) হয়। বার্সা ফেব্রিসিয়াসকে আক্রমণ করে।",
+  spread:["মলের মাধ্যমে","আক্রান্ত খাদ্য, পানি, যন্ত্রপাতি, কাপড়, জুতার মাধ্যমে"],
+  sym:["ছোটাছুটি বন্ধ করে থাকা","একে অপরের পিঠে ঠোকর দেওয়া","সাদা পাতলা পায়খানা","ঘাড়ের লোম খাড়া হওয়া","রেহের পালক উসকো-খুসকো","মৃত্যুহার ২০-৩০%"],
+  pm:["উরু ও বুকের মাংসে ফোটা ফোটা রক্ত","প্রোভেন্ট্রিকুলাস ও গিজার্ডের সংযোগস্থলে রক্তক্ষরণ","বার্সা ফুলে জিলাটিন জাতীয় পদার্থ পাওয়া যায়","বার্সায় পুঁজ বা রক্তও পাওয়া যেতে পারে"],
+  treat:[{name:"Levomax Vet / Levoxin (Levofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Rena C / Eskavit C (Vitamin C)",dose:"১ গ্রাম/৫-১০ লিটার পানিতে, ৫ দিন",ic:"🌿"},{name:"Immolyte / Immunocare (Immuno-stimulant)",dose:"১ মি.লি./১-২ লিটার, দিনে ২ বার",ic:"💉"},{name:"Electromin / ORS Gold (Electrolyte)",dose:"১ গ্রাম/২ লিটার পানিতে, ৪-৫ দিন",ic:"💧"},{name:"Nephcare Plus / KC Vet (Kidney Tonic)",dose:"১ মি.লি./১-২ লিটার, ৫ দিন",ic:"💊"}],
+  alt:[{name:"Ciprocin Vet / Enrocin (Ciprofloxacin/Enrofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💉"},{name:"IBIMUN (Silo — IBD specific Phytogenic)",dose:"চিকিৎসায় ২ মি.লি./লিটার পানিতে",ic:"🌿"},{name:"GPC-8 / Virucid (জীবাণুনাশক স্প্রে)",dose:"GPC-8: ৫ মি.লি./লিটার স্প্রে",ic:"🧴"}],
+  prev:"জন্মের ১৪তম দিনে গামবোরো টিকা (লাইভ), ২১তম দিনে বুস্টার।",
+  kw:["গামবোরো","gumboro","ibd","বার্সা","birna","infectious bursal"]},
+
+ {id:"mareks",name:"মারেক্স রোগ",en:"Marek's Disease",cat:"virus",badge:"ভাইরাস",icon:"🦠",
+  sev:"high",age:"১২-১৪ সপ্তাহ",mort:"পরিবর্তনশীল",
+  cause:"Herpes Virus (Mareks Virus) — সাধারণত ১২-১৪ সপ্তাহ বয়সে। লিটারে বছরের পর বছর টিকে থাকতে পারে।",
+  spread:["খাদ্য ও নিঃশ্বাসের মাধ্যমে","পোকামাকড়, ধুলিকণার মাধ্যমে"],
+  sym:["এক পা সামনে, অন্যটি টানটান পিছনে (Classic Splits)","ঘাড় বাঁকা হয়ে যাওয়া","একপাশে শুয়ে পড়া","মাথার ঝুঁটি শুকিয়ে ফ্যাকাসে হওয়া","ওজন হ্রাস"],
+  pm:["সায়াটিক নার্ভ মোটা হয়ে যাওয়া (স্বাভাবিকের দ্বিগুণ)","ওভারি, কিডনি, যকৃত, হৃদপিণ্ডে সাদা টিউমার"],
+  treat:[{name:"Turbonid Vet / Erisen Vet (Erythromycin+Sulpha+TMP)",dose:"১ গ্রাম/লিটার পানিতে, ৩-৫ দিন",ic:"💊"},{name:"Thiavin / Thiamix RP (Vit B1+B2+B6)",dose:"১ গ্রাম/লিটার পানিতে, ৫ দিন",ic:"💉"},{name:"Eskavit ADE / Vit-AD3E (Vitamin ADE)",dose:"১ মি.লি./৪-৫ লিটার পানিতে",ic:"🌿"},{name:"Hepatovet / Hepatonic (Liver Tonic)",dose:"১ মি.লি./লিটার পানিতে",ic:"🌿"}],
+  alt:[{name:"Ashwagandha Extract (Withania somnifera)",dose:"খাদ্যে ২% মিশিয়ে (Lymphoid Leucosis-এও কার্যকর)",ic:"🌿"},{name:"Vitamin E ৪০-২০০ IU/কেজি খাদ্যে",dose:"Lymphoid Leucosis প্রতিরোধে",ic:"🌿"},{name:"Sancal-P / Escal-P (Ca+Vit D3)",dose:"১-২ গ্রাম/লিটার পানিতে",ic:"💊"}],
+  prev:"১ম দিনেই Mareks Vaccine (SC)। কোনো নিরাময় নেই — টিকাই একমাত্র প্রতিরোধ।",
+  kw:["মারেক্স","mareks","herpes","টিউমার","splits","পক্ষাঘাত"]},
+
+ {id:"birdflu",name:"এভিয়ান ইনফ্লুয়েঞ্জা (বার্ড ফ্লু)",en:"Avian Influenza / Bird Flu",cat:"virus",badge:"ভাইরাস (জুনোটিক)",icon:"🦠",
+  sev:"high",age:"সকল বয়সে",mort:"৯০-১০০% (HPAI)",
+  cause:"Influenza Virus — Low pathogenic (H9N2) ও High pathogenic (H5N1)। বায়ুবাহিত মারাত্মক জুনোটিক রোগ — মানুষেও ছড়াতে পারে।",
+  spread:["বায়ুর মাধ্যমে","সংক্রমিত পাখির সংস্পর্শে","দূষিত পানি ও মল থেকে"],
+  sym:["আকস্মিকভাবে অনেক মুরগির মৃত্যু","Comb ও Wattles গুলো রঙ হারিয়ে কালচে-নীল হওয়া","নাক দিয়ে রক্ত মিশ্রিত মিউকাস নিঃসরণ","Shank ও পালকহীন চামড়ায় Hemorrhage","আকস্মিক ডিম পাড়া বন্ধ"],
+  pm:["SC fat, Proventriculus ও trachea-তে Haemorrhage","যকৃত বড় ও ভঙ্গুর (Aflatoxicosis-এর মতো)","পেটে Free egg yolk","Conjunctiva congested ও hemorrhagic"],
+  treat:[{name:"Ranovir Powder (Antiviral)",dose:"১ গ্রাম/২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Ciprocin Vet Solution (Ciprofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💉"},{name:"Immolyte Liquid (Immunopotentiator)",dose:"১ মি.লি./লিটার পানিতে, দিনে ২ বার, ৫ দিন",ic:"💉"},{name:"Rena C (Vitamin C)",dose:"২ মি.লি./লিটার পানিতে, ৫ দিন",ic:"🌿"},{name:"GPC-8 / Timsen (জীবাণুনাশক স্প্রে)",dose:"GPC-8: ৫ মি.লি./লিটার স্প্রে",ic:"🧴"}],
+  alt:[{name:"AVIMUN (Silo — AI-specific Phytogenic)",dose:"চিকিৎসায় ২ মি.লি./লিটার; প্রতিরোধে ১ মি.লি./লিটার",ic:"🌿"},{name:"Levomax Vet / Levoxin (Levofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Electromin / ORS Gold (Electrolyte)",dose:"১ গ্রাম/২ লিটার পানিতে, ৪-৫ দিন",ic:"💧"}],
+  prev:"কঠোর বায়োসিকিউরিটি। H5N1 সন্দেহ হলে DLS-কে অবিলম্বে জানান (16358)।",
+  kw:["বার্ড ফ্লু","bird flu","avian influenza","h5n1","h9n2","ইনফ্লুয়েঞ্জা","hpai"]},
+
+ {id:"ib",name:"ইনফেকশাস ব্রংকাইটিস (IB)",en:"Infectious Bronchitis",cat:"virus",badge:"ভাইরাস",icon:"🦠",
+  sev:"med",age:"সকল বয়সে",mort:"২৫-৩০%",
+  cause:"Coronavirus (IBV) — শ্বাসতন্ত্র ও কিডনিকে আক্রান্ত করে। ডিমের মান ও সংখ্যা হ্রাস করে।",
+  spread:["বায়ুবাহিত","সংক্রমিত পাখির সংস্পর্শে","দূষিত সরঞ্জামের মাধ্যমে"],
+  sym:["শ্বাসকষ্ট, কাশি, হাঁচি","নাক দিয়ে সর্দি","ডিম উৎপাদন উল্লেখযোগ্যভাবে কমে যাওয়া","ডিমের খোসা পাতলা বা আকৃতিবিকৃত","বাচ্চায় Gasping শ্বাস"],
+  pm:["শ্বাসনালি ও ফুসফুসে মিউকাস ও পুঁজ","এয়ার স্যাক ঘোলাটে","কিডনি ফুলে যাওয়া (Nephritis type)"],
+  treat:[{name:"Turbonid / Erisen Vet (Erythromycin+Sulpha+TMP)",dose:"১ গ্রাম/লিটার পানিতে, ৩-৫ দিন",ic:"💊"},{name:"Levomax Vet / Levoxin (Levofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Respiron / Aromax (Respiratory Stimulant)",dose:"১ মি.লি./৪-৫ লিটার পানিতে, ৩-৫ দিন",ic:"💊"},{name:"Nephcare Plus / KC Vet (Kidney Tonic)",dose:"১ মি.লি./১-২ লিটার, ৫ দিন",ic:"💧"},{name:"Mucospel-Vet (Bromhexine — Mucolytic)",dose:"১ গ্রাম/৩ লিটার পানিতে, ৫ দিন",ic:"💊"}],
+  alt:[{name:"Mycostop (Tylosin) বা Tylvasin Vet (Tylvalosin)",dose:"Tylosin: ২.৫ গ্রাম/লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Electromin / ORS Gold (Electrolyte)",dose:"১ গ্রাম/২ লিটার পানিতে, ৪-৫ দিন",ic:"💧"}],
+  prev:"২৫-২৮ দিনে IB Vaccine (H120) চোখে ফোঁটা। সঠিক বায়ু চলাচল নিশ্চিত করুন।",
+  kw:["ব্রংকাইটিস","bronchitis","ib","coronavirus","শ্বাসকষ্ট","ib virus"]},
+
+ {id:"cholera",name:"ফাউল কলেরা",en:"Fowl Cholera",cat:"bacteria",badge:"ব্যাকটেরিয়া",icon:"🔬",
+  sev:"high",age:"১২ সপ্তাহ+",mort:"৫০-১০০%",
+  cause:"Pasteurella multocida — সাধারণত ১২ সপ্তাহের বেশি বয়সী মুরগিতে। অতিরিক্ত গরমে প্রকোপ বাড়ে।",
+  spread:["সংক্রমিত মুরগির সংস্পর্শে","দূষিত পানি ও খাদ্যের মাধ্যমে","কর্মীদের পোশাক ও সরঞ্জামের মাধ্যমে"],
+  sym:["সাদা পায়খানা, পরে মিউকাস মিশ্রিত সবুজ পায়খানা","শ্বাসকষ্ট, খোঁড়ানো","Comb, Wattle ও Earlobe-এ তরল জমে ফুলে যাওয়া, নীলাভ রঙ","ঘাড় ঘুরিয়ে মাথার উপর রাখার লক্ষণ"],
+  pm:["যকৃত বড় ও সাদা নেক্রোটিক ফোসি সহ","Heart, Gizzard ও পেটের চর্বিতে Petechial haemorrhage","ডিমপাড়া মুরগির পেটে ছোট ছোট ফলিকল সহ Free yolk"],
+  treat:[{name:"Sulprim-Vet (Sulphadiazine+TMP) / Renatrim",dose:"১ মি.লি./২ লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Geniflor Vet (Florfenicol)",dose:"১ মি.লি./২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Enrocin / Enflox-Vet (Enrofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Hameco pH / Acify (Acidifier)",dose:"১-২ মি.লি./লিটার পানিতে, দিনে ২ বার, ৫ দিন",ic:"🧪"},{name:"Hepatovet / Hepatonic (Liver Tonic)",dose:"১ মি.লি./লিটার পানিতে, ৫ দিন",ic:"🌿"}],
+  alt:[{name:"Turbonid Vet / Erisen Vet (Erythromycin+Sulpha+TMP)",dose:"১ গ্রাম/লিটার পানিতে, ৩-৫ দিন",ic:"💊"},{name:"Mycostop (Tylosin)",dose:"২.৫ গ্রাম/লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"CFC PLUS (Silo — Fowl Cholera-specific Phytogenic)",dose:"চিকিৎসায় ২ মি.লি./লিটার পানিতে",ic:"🌿"},{name:"হাঁসে: Ceftriaxone (3rd gen. Cephalosporin)",dose:"৫০-১০০ মি.গ্রা./কেজি SC/IM, ৫ দিন",ic:"💉"}],
+  prev:"৭৫তম দিনে ১ মি.লি. পাখার নিচে ইনজেকশন, ৯০তম দিনে বুস্টার।",
+  kw:["ফাউল কলেরা","fowl cholera","pasteurella","কলেরা","multocida"]},
+
+ {id:"pullorum",name:"পুলোরাম রোগ",en:"Pullorum Disease",cat:"bacteria",badge:"ব্যাকটেরিয়া",icon:"🔬",
+  sev:"high",age:"বাচ্চা ও বাড়ন্ত",mort:"২-৩ সপ্তাহে সর্বোচ্চ",
+  cause:"Salmonella pullorum — ডিমের মাধ্যমে বংশপরম্পরায় ছড়ায় (Vertical transmission)।",
+  spread:["আক্রান্ত ডিম (Transovarian)","আক্রান্ত বাচ্চা","ইনকুবেটর, খাবার ও পানির পাত্র","মানুষের জামা, জুতো, ডিমের ট্রে ও লিটার"],
+  sym:["মলদ্বারে সাদা চকের মতো পায়খানা লেগে থাকা (Pasty Vent)","বাচ্চা লেংড়াতে থাকে, পায়ের গিট ফুলে যায়","৫-১০ দিন বয়সে মৃত্যু শুরু, ২-৩ সপ্তাহে সর্বোচ্চ","ডিম ফোটার হার কম, বাচ্চা দুর্বল"],
+  pm:["যকৃত, ফুসফুস ও হৃদপিণ্ডে নেক্রোটিক ফোসি","পেটে অশোষিত ইয়ক স্যাক (Unabsorbed Yolk Sac)","হৃদপিণ্ডে সাদা নডিউল"],
+  treat:[{name:"Sulprim-Vet / Renatrim (Potentiated Sulfonamide)",dose:"১ মি.লি./২ লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Renamox / Moxillin Vet (Amoxicillin)",dose:"১ গ্রাম/১-২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Hameco pH / Acify (Acidifier)",dose:"১-২ মি.লি./লিটার, দিনে ২ বার, ৫ দিন",ic:"🧪"},{name:"Electromin / ORS Gold (Electrolyte)",dose:"১ গ্রাম/২ লি. পানিতে, ৪-৫ দিন",ic:"💧"},{name:"Hepatovet / Hepatonic (Liver Tonic)",dose:"১ মি.লি./লিটার পানিতে, ৫ দিন",ic:"🌿"}],
+  alt:[{name:"Acigent Vet 20 (Gentamycin) — Amoxicillin-resistant ক্ষেত্রে",dose:"১ গ্রাম/২-৪ লিটার পানিতে, ৫ দিন",ic:"💉"},{name:"Geniflor Vet (Florfenicol)",dose:"১ মি.লি./২ লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Gut Pro / PoultryStar (Probiotic)",dose:"বাচ্চা: ১ গ্রাম/লিটার পানিতে, ৫-৭ দিন",ic:"🌿"}],
+  prev:"পরিষ্কার পরিবেশে পালন। ডিম পরিষ্কার ট্রেতে সংগ্রহ। ফিউমিগেশন করুন। এই রোগের কার্যকর টিকা নেই।",
+  kw:["পুলোরাম","pullorum","salmonella","pasty vent","সাদা ডায়েরিয়া"]},
+
+ {id:"typhoid",name:"ফাউল টাইফয়েড",en:"Fowl Typhoid",cat:"bacteria",badge:"ব্যাকটেরিয়া",icon:"🔬",
+  sev:"med",age:"বড় মুরগি",mort:"২.৫-২০%",
+  cause:"Salmonella gallinarum — গ্রাম নেগেটিভ ব্যাকটেরিয়া। বড় ও ডিমপাড়া মুরগিতে বেশি।",
+  spread:["পুলোরামের মতোই (Vertical ও Horizontal)"],
+  sym:["ডিম উৎপাদন কমে যাওয়া (ওভারি আক্রান্ত হলে)","মলদ্বারে সাদা পায়খানা (Pasty vent)","পিছনের পায়ের গিট ফুলে যাওয়া","মৃত্যুহার ২.৫-২০%"],
+  pm:["যকৃত ফুলে, ভঙ্গুর, Bronze color ও সাদা নেক্রোসিস","ডিম্বাশয় হেমোরেজিক ও আকৃতি বিকৃত","কুসুম অশোষিত, হলুদাভ বা গাঢ় লাল রঙের"],
+  treat:[{name:"Acemox (Amoxicillin)",dose:"১ গ্রাম/৩ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Neoren 50 (Neomycin)",dose:"১ গ্রাম/২ লি. পানিতে, ৫ দিন",ic:"💊"},{name:"Hameco pH (Acidifier)",dose:"১ মি.লি./লিটার, দিনে ২ বার, ৫ দিন",ic:"🧪"},{name:"Electromin Powder (Electrolyte)",dose:"১ গ্রাম/২ লি. পানিতে, ৪-৫ দিন",ic:"💧"}],
+  alt:[],
+  prev:"পুলোরামের মতোই। সালমোনেলা লাইভ ও ইনঅ্যাক্টিভ টিকা পাওয়া যায়।",
+  kw:["টাইফয়েড","fowl typhoid","salmonella gallinarum","ব্রোঞ্জ","bronze liver"]},
+
+ {id:"coryza",name:"ইনফেকশাস করাইজা (IC)",en:"Infectious Coryza / Chicken Cold",cat:"bacteria",badge:"ব্যাকটেরিয়া",icon:"🔬",
+  sev:"med",age:"সকল বয়সে",mort:"কম",
+  cause:"Haemophilus gallinarum — অপর্যাপ্ত বায়ু চলাচল ও লিটার থেকে অ্যামোনিয়া গ্যাস হলে বেশি দেখা যায়।",
+  spread:["নাক থেকে নিঃসৃত পদার্থ","দূষিত খাদ্য, পানি ও যন্ত্রপাতির মাধ্যমে"],
+  sym:["মুখ ও চোখ ফুলে যাওয়া","চোখ দিয়ে পানি পড়া","নাক ও মুখ দিয়ে দুর্গন্ধযুক্ত সর্দি","শ্বাসকষ্ট ও ঘড়ঘড় শব্দ"],
+  pm:["Infraorbital sinus-এ সাদা-হলুদ পুঁজ ও মিউকাস"],
+  treat:[{name:"Erisen Vet Powder (Erythromycin+Sulpha+TMP)",dose:"১ গ্রাম/লিটার পানিতে, ৩-৫ দিন",ic:"💊"},{name:"Respiron / Res Sol (Respiratory Stimulant)",dose:"১ মি.লি./লিটার পানিতে, ৩-৫ দিন",ic:"💊"}],
+  alt:[],
+  prev:"স্বাস্থ্যসম্মত পরিবেশ। বাংলাদেশে করাইজার কোনো টিকা উৎপন্ন হয় না।",
+  kw:["করাইজা","coryza","chicken cold","haemophilus","সর্দি","ic","মুখ ফোলা"]},
+
+ {id:"crd",name:"ক্রনিক রেসপিরেটরি ডিজিজ (CRD)",en:"Chronic Respiratory Disease (CRD)",cat:"bacteria",badge:"মাইকোপ্লাজমা",icon:"🔬",
+  sev:"med",age:"সকল বয়সে",mort:"কম-মধ্যম",
+  cause:"Mycoplasma gallisepticum — E.coli, রাণীক্ষেত, গামবোরো, IB, পুষ্টিহীনতা এই রোগকে আরো খারাপ করে।",
+  spread:["মা থেকে বাচ্চায় ডিমের মাধ্যমে (Vertical)","আক্রান্ত বাচ্চার লালা ও হাঁচির মাধ্যমে","আক্রান্ত মুরগির খাদ্য ও পানির পাত্রের মাধ্যমে"],
+  sym:["হাঁচি, কাশি, নাক দিয়ে তরল","শ্বাস-প্রশ্বাসে ঘড়ঘড় শব্দ","মুখ হাঁ করে শ্বাস টানা","খাদ্য গ্রহণ হ্রাস","ডিম উৎপাদন ৫০% হ্রাস"],
+  pm:["নাসারন্ধ্র, শ্বাসনালি ও ফুসফুস সাদা মিউকাসে পূর্ণ","হৃৎপিণ্ড, ফুসফুস ও যকৃতে সাদা আবরণ (Airsacculitis ও Pericarditis)"],
+  treat:[{name:"Mycostop / Tylovet (Tylosin)",dose:"২.৫ গ্রাম/লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Renagard / Tialin S (Tiamulin)",dose:"১ গ্রাম/৩ লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Gcotil Vet / Qtils (Tilmicosin)",dose:"১ মি.লি./৩-৪ লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Respiron / Aromax / PulmoGold (Respiratory Stimulant)",dose:"১ মি.লি./৪-৫ লিটার পানিতে, ৭ দিন",ic:"💊"}],
+  alt:[{name:"Tylvasin Vet (Tylvalosin)",dose:"১ গ্রাম/৫ লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"Enrocin / Levomax (Enrofloxacin/Levofloxacin)",dose:"১ মি.লি./১-২ লি. পানিতে, ৫ দিন",ic:"💉"},{name:"Mucospel-Vet (Bromhexine — Mucolytic)",dose:"১ গ্রাম/৩ লিটার পানিতে, ৫ দিন",ic:"💊"},{name:"RESTREAT PLUS (Silo — CRD/Respiratory Phytogenic)",dose:"চিকিৎসায় ২ মি.লি./লিটার পানিতে",ic:"🌿"}],
+  prev:"বায়োসিকিউরিটি কড়াকড়ি। ⚠️ Tiamulin ও Tilmicosin — Ionophore coccidiostat-এর সাথে ব্যবহার করবেন না। ঘরের বায়ু চলাচল নিশ্চিত করুন।",
+  kw:["crd","মাইকোপ্লাজমা","mycoplasma","ক্রনিক","chronic","শ্বাসকষ্ট","airsac"]},
+
+ {id:"roundworm",name:"বড় গোলকৃমি",en:"Large Roundworm (Ascaridiasis)",cat:"parasite",badge:"পরজীবী (কৃমি)",icon:"🪱",
+  sev:"low",age:"সকল বয়সে",mort:"কম",
+  cause:"Ascaridia gali — ক্ষুদ্রান্ত্র আক্রান্ত হয়। মুরগির সবচেয়ে সাধারণ কৃমি।",
+  spread:["ডিম থেকে বের হওয়া লার্ভা মাটি বা খাদ্যের সাথে খেলে"],
+  sym:["পালক উসকো-খুসকো হওয়া","শরীরের বৃদ্ধি না হওয়া","বুকের হাড় স্পষ্ট দেখা যাওয়া (Keel bone prominent)","পাতলা পায়খানা, মাঝে মাঝে কৃমি বের হওয়া","রক্তশূন্যতা ও দুর্বলতা","ডিম উৎপাদন হ্রাস"],
+  pm:["Small Intestine-এ অনেক কৃমি দেখা যায় (৫-১০ সেমি লম্বা)"],
+  treat:[{name:"Piper Vet Powder (Piperazine Citrate)",dose:"১০ গ্রাম/৬ লি. পানিতে বা ১০ গ্রাম/৩.৫ কেজি খাদ্যে",ic:"💊"},{name:"Elcaris Vet Powder (Levamisole HCl)",dose:"১ গ্রাম/লিটার পানিতে",ic:"💊"},{name:"Liva Vit Liquid (Liver Tonic)",dose:"১ মি.লি./২ লি. পানিতে, ৫ দিন",ic:"🌿"}],
+  alt:[],
+  prev:"৬০ দিনে প্রথম কৃমিনাশক, ১২০ দিনে দ্বিতীয়। লিটার মুরগিতে প্রতি ৩০ দিনে।",
+  kw:["গোলকৃমি","roundworm","ascaridia","কৃমি","worm","ascarid"]},
+
+ {id:"coccidiosis",name:"কক্সিডিওসিস (রক্ত আমাশয়)",en:"Coccidiosis (Bloody Diarrhea)",cat:"parasite",badge:"পরজীবী (প্রোটোজোয়া)",icon:"🪱",
+  sev:"high",age:"৩-১৮ সপ্তাহ",mort:"পরিবর্তনশীল",
+  cause:"প্রোটোজোয়া — Eimeria tenella (Cecal), E. necatrix (Intestinal) সহ বিভিন্ন প্রজাতি।",
+  spread:["আক্রান্ত মলের মাধ্যমে — প্রত্যক্ষ ও পরোক্ষ সংস্পর্শে"],
+  sym:["তীব্র দুর্গন্ধযুক্ত রক্ত পায়খানা","রক্ত ও আম মিশ্রিত পাতলা পায়খানা","উসকো-খুসকো পালক","আক্রান্ত পাখি একসাথে জড়ো হয়ে থাকে","ঝুঁটি ফ্যাকাসে হয়"],
+  pm:["সিকাম রক্তে পূর্ণ ও ফুলে যায়","Intestinal form-এ ক্ষুদ্রান্ত্র Haemorrhagic ও Necrotic"],
+  treat:[{name:"Amprol Vet / Coctreat EP (Amprolium 20%)",dose:"চিকিৎসায়: ১ গ্রাম/লিটার পানিতে, ৩-৫ দিন",ic:"💊"},{name:"Ranazuril / Anticoc Vet (Toltrazuril)",dose:"১ মি.লি./২ লিটার পানিতে, ৪৮ ঘণ্টা (তীব্র পর্যায়ে)",ic:"💊"},{name:"Electromin / ORS Gold (Electrolyte)",dose:"১ গ্রাম/২ লিটার পানিতে, ৩-৫ দিন",ic:"💧"},{name:"Eskavit ADE (Vitamin A+K)",dose:"১ মি.লি./৪-৫ লিটার পানিতে",ic:"🌿"}],
+  alt:[{name:"ESB3 30% (Sulfaclozine)",dose:"চিকিৎসায় ২ গ্রাম/লিটার; প্রতিরোধে ১ গ্রাম/লিটার পানিতে",ic:"💊"},{name:"Diclavet (Diclazuril)",dose:"১ মি.লি./২-৩ লিটার পানিতে, ৩-৫ দিন",ic:"💊"}],
+  prev:"লিটার শুষ্ক ও পরিষ্কার রাখুন। খাদ্য ও পানি পরিষ্কার রাখুন।",
+  kw:["কক্সিডিওসিস","coccidiosis","রক্ত আমাশয়","eimeria","bloody diarrhea","cecal"]},
+
+ {id:"histomoniasis",name:"হিস্টোমোনিয়াসিস (Blackhead)",en:"Histomoniasis / Blackhead Disease",cat:"parasite",badge:"পরজীবী (প্রোটোজোয়া)",icon:"🪱",
+  sev:"high",age:"সকল বয়সে",mort:"পরিবর্তনশীল",
+  cause:"প্রোটোজোয়া Histomonas meleagridis — হেটারাকিস কৃমির ডিমের মাধ্যমে ছড়ায়।",
+  spread:["Heterakis কৃমির ডিমের মাধ্যমে","আক্রান্ত মলের সংস্পর্শে"],
+  sym:["পালক নিচের দিকে ঝুলে পড়া","হলুদ সালফারি রঙের পাতলা পায়খানা","মাথা নিচের দিকে কাত করে রাখা","মাথার চামড়া কালো হয়ে যাওয়া (Blackhead)"],
+  pm:["যকৃতে গোলাকৃতির নির্দিষ্ট ক্ষত (১ সেমি ব্যাসের বাটির মতো)","আক্রান্ত সিকামে কেসিয়াস কাস্ট"],
+  treat:[{name:"Dimetridazole ০.০৬%",dose:"খাদ্যের সাথে মিশিয়ে ৭ দিন",ic:"💊"},{name:"Nifuridazide ০.০২%",dose:"খাদ্য বা পানির সাথে ৭ দিন",ic:"💊"}],
+  alt:[],
+  prev:"নিয়মিত কৃমিনাশক দিয়ে Heterakis নিয়ন্ত্রণ করুন।",
+  kw:["হিস্টোমোনিয়াসিস","histomoniasis","blackhead","কালো মাথা","histomonas"]},
+
+ {id:"vita",name:"ভিটামিন এ-এর অভাব",en:"Vitamin A Deficiency",cat:"nutrition",badge:"পুষ্টিঘাটতি",icon:"🌿",
+  sev:"med",age:"সকল বয়সে",mort:"কম",
+  cause:"খাদ্যে পর্যাপ্ত Vitamin A না থাকলে বা অক্সিডেশনে নষ্ট হলে।",
+  spread:[],
+  sym:["চোখের দৃষ্টিশক্তি কমে যাওয়া, চোখে পনিরের মতো তরল জমা","ডিম উৎপাদন কমে, ডিমে রক্তের ছিটা","মুখ ও গলনালির মিউকাসে Hyperkeratosis","চামড়া, ঝুঁটি শুষ্ক ও নীলাভ"],
+  pm:[],
+  treat:[{name:"Vit-AD3E Solution",dose:"১ মি.লি./৪ লিটার পানিতে, ৩-৫ দিন",ic:"💉"}],
+  alt:[],
+  prev:"প্রতি কেজি খাদ্যে ৮,০০০-১৫,০০০ IU ভিটামিন এ সরবরাহ।",
+  kw:["ভিটামিন এ","vitamin a","hyperkeratosis","অভাব","চোখ"]},
+
+ {id:"vitd",name:"ভিটামিন ডি-এর অভাব (রিকেটস)",en:"Vitamin D Deficiency / Rickets",cat:"nutrition",badge:"পুষ্টিঘাটতি",icon:"🌿",
+  sev:"med",age:"বাড়ন্ত পাখি",mort:"কম",
+  cause:"খাদ্যে পর্যাপ্ত ভিটামিন ডি না থাকলে।",
+  spread:[],
+  sym:["পায়ের অস্থি নরম, বাঁকা — রিকেটস","বুকের পাঁজর ফুলে যাওয়া — Ricketty Rosary","সঠিকভাবে হাঁটতে না পারা","ডিমের খোসা পাতলা"],
+  pm:[],
+  treat:[{name:"Vit-AD3E Solution",dose:"১ মি.লি./৪ লিটার পানিতে, ৩-৫ দিন",ic:"💉"}],
+  alt:[],
+  prev:"প্রতি কেজি খাদ্যে ১৫,০০০-২৫,০০০ IU ভিটামিন ডি সরবরাহ।",
+  kw:["ভিটামিন ডি","vitamin d","রিকেটস","rickets","হাড়","অভাব"]},
+
+ {id:"vite",name:"ভিটামিন ই-এর অভাব",en:"Vitamin E Deficiency",cat:"nutrition",badge:"পুষ্টিঘাটতি",icon:"🌿",
+  sev:"med",age:"বাচ্চা মুরগি",mort:"কম-মধ্যম",
+  cause:"খাদ্যে পর্যাপ্ত ভিটামিন ই না থাকলে বা ফ্যাটি অ্যাসিডের অক্সিডেশন হলে।",
+  spread:[],
+  sym:["ডিম থেকে বাচ্চা ফোটার হার কমে","Encephalomalacia — মস্তিষ্কে সমস্যা (Crazy Chick Disease)","বুক ও উরুর মাংসপেশি শুকিয়ে যাওয়া","চামড়ার নিচে পানি জমা"],
+  pm:[],
+  treat:[{name:"Vit-AD3E Solution",dose:"১ মি.লি./৪ লিটার পানিতে, ৩-৫ দিন",ic:"💉"}],
+  alt:[],
+  prev:"প্রতি কেজি খাদ্যে ২০-৫০ মি.গ্রা. ভিটামিন ই।",
+  kw:["ভিটামিন ই","vitamin e","crazy chick","encephalomalacia","অভাব"]},
+
+ {id:"vitb",name:"ভিটামিন বি-কমপ্লেক্স অভাব",en:"Vitamin B Complex Deficiency",cat:"nutrition",badge:"পুষ্টিঘাটতি",icon:"🌿",
+  sev:"med",age:"বাচ্চা ও বাড়ন্ত",mort:"কম",
+  cause:"B1, B2, B6, B12-এর যেকোনো একটির অভাব।",
+  spread:[],
+  sym:["B1 অভাব: পা বাঁকা করে ঘাড় পিছনে ঘুরিয়ে আকাশের দিকে মুখ (Opisthotonus)","B2 অভাব: Curled-Toe Paralysis — আঙুল ভেতরে বাঁকা","B6 অভাব: শরীরে কাঁপুনি","B12 অভাব: রক্তশূন্যতা, Perosis"],
+  pm:[],
+  treat:[{name:"Vit-AD3E Solution",dose:"১ মি.লি./৪ লিটার পানিতে, ৩-৫ দিন",ic:"💉"},{name:"Prithi WS (Vit-B Complex)",dose:"১ গ্রাম/লিটার পানিতে, ৩-৫ দিন",ic:"💉"}],
+  alt:[],
+  prev:"সুষম খাদ্যে পর্যাপ্ত বি ভিটামিন সরবরাহ করুন।",
+  kw:["ভিটামিন বি","vitamin b","b1","b2","b6","b12","curled toe","perosis","opisthotonus"]},
+
+ {id:"aspergillosis",name:"এসপারজেলোসিস (Brooder Pneumonia)",en:"Aspergillosis / Brooder Pneumonia",cat:"other",badge:"ছত্রাক রোগ",icon:"🍄",
+  sev:"high",age:"১-৩ সপ্তাহের বাচ্চা",mort:"৫০%+",
+  cause:"Aspergillus fumigatus, A. flavus — ভেজা ও পচা লিটারের স্পোর শ্বাসের সাথে ফুসফুসে প্রবেশ করে।",
+  spread:["আক্রান্ত লিটার থেকে বায়ুবাহিত স্পোরের মাধ্যমে"],
+  sym:["শ্বাসকষ্ট, হাঁপানি","দ্রুত শ্বাস-প্রশ্বাস","মুখ হাঁ করে শ্বাস টানা","চোখ ফুলে যাওয়া ও বন্ধ হয়ে যাওয়া"],
+  pm:["ফুসফুসে হলুদাভ নডিউল (সাগু দানার মতো)","ফুসফুস বিবর্ণ ও শক্ত","এয়ার স্যাকে ছত্রাকের কলোনি"],
+  treat:[{name:"Two Plus Liquid (Toxin Binder)",dose:"১ মি.লি./লিটার পানিতে, দিনে ২ বার, ৫ দিন",ic:"💊"},{name:"Copper Sulphate",dose:"১ গ্রাম/২ লি. পানিতে, দিনে ২ বার, ৫ দিন",ic:"🧪"},{name:"Respiron Liquid",dose:"১ মি.লি./লিটার পানিতে, দিনে ২ বার, ৩ দিন",ic:"💊"}],
+  alt:[],
+  prev:"পরিষ্কার ও শুষ্ক লিটার ব্যবহার করুন। ভেজা ও পচা খাদ্য দেবেন না।",
+  kw:["এসপারজেলোসিস","aspergillosis","brooder pneumonia","ছত্রাক","aspergillus","fungal"]},
+
+ {id:"mycotoxin",name:"মাইকোটক্সিকোসিস",en:"Mycotoxicosis",cat:"other",badge:"ছত্রাক বিষ",icon:"🍄",
+  sev:"med",age:"সকল বয়সে",mort:"পরিবর্তনশীল",
+  cause:"ছত্রাক থেকে উৎপন্ন মাইকোটক্সিন (Aflatoxin, T2 Toxin, Ochratoxin)। পানিভেজা বা দীর্ঘদিন সংরক্ষিত খাদ্যে উৎপন্ন হয়।",
+  spread:["দূষিত খাদ্য খেলে"],
+  sym:["চামড়া ফুলে চুলকায় (T2 Toxin)","মুখে ক্ষত (T2 Toxin)","ডিম উৎপাদন কমে, খোসা পাতলা (Aflatoxin)","পেট ফুলে যাওয়া, মুরগি শুকিয়ে যাওয়া"],
+  pm:[],
+  treat:[{name:"Two Plus Liquid (Toxin Binder)",dose:"১ মি.লি./লিটার পানিতে, দিনে ২ বার, ৫ দিন",ic:"💊"}],
+  alt:[],
+  prev:"বাসি, পচা খাদ্য না দেওয়া। Sodium propionate ১% মোল্ড ইনহিবিটর হিসেবে ব্যবহার।",
+  kw:["মাইকোটক্সিন","mycotoxin","mycotoxicosis","aflatoxin","ছত্রাক বিষ","toxin"]},
+
+ {id:"cannibalism",name:"ঠোকরা-ঠুকুরি (ক্যানিবালিজম)",en:"Cannibalism / Pecking",cat:"other",badge:"ব্যবস্থাপনা সমস্যা",icon:"⚠️",
+  sev:"med",age:"সকল বয়সে",mort:"আঘাতজনিত",
+  cause:"অতিরিক্ত আলো, তাপমাত্রা, খাদ্য ও পানির ঘাটতি, সঠিক সময়ে ডিবিকিং না করা, স্বল্প জায়গায় বেশি মুরগি।",
+  spread:[],
+  sym:["মুরগি একে অপরকে ঠোকরায়","পালক ও চামড়া ক্ষতিগ্রস্ত","রক্তপাত ও ক্ষত"],
+  pm:[],
+  treat:[{name:"লবণ (Salt)",dose:"খাদ্যে ৩-৫%",ic:"🧂"},{name:"Vitamin Mineral Premix",dose:"খাদ্যে ০.২%",ic:"🌿"}],
+  alt:[],
+  prev:"সঠিক সময়ে ডিবিকিং করুন। পর্যাপ্ত জায়গা নিশ্চিত করুন। আলোর তীব্রতা কমান।",
+  kw:["ঠোকরা","ক্যানিবালিজম","cannibalism","debeaking","ডিবিকিং","pecking"]}
+];
+
+/* ====== DRUGS DATA ====== */
+const DRUGS=[
+  {nm:"Fra C-12 Liquid",ai:"Fra C-12 (Antiviral)",use:"ভাইরাস রোগ (রাণীক্ষেত, গামবোরো)",dose:"১ মি.লি./লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Ranovir Powder",ai:"Ranovir (Antiviral)",use:"সব ভাইরাস রোগ",dose:"১ গ্রাম/২ লিটার পানিতে, দিনে ২ বার",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Ciprocin Vet Solution",ai:"Ciprofloxacin",use:"ব্যাকটেরিয়া, ভাইরাসের সেকেন্ডারি ইনফেকশন",dose:"১ মি.লি./লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Acigen Vet 20",ai:"Gentamycin",use:"রাণীক্ষেত, CRD, গ্রাম নেগেটিভ ব্যাকটেরিয়া",dose:"১ মি.লি./২ লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Erisen Vet Powder",ai:"Erythromycin+Sulphadiazine+TMP",use:"করাইজা, মারেক্স, CRD",dose:"১ গ্রাম/লিটার পানিতে",dur:"৩-৫ দিন",type:"tg-ab"},
+  {nm:"Superflo-200 Solution",ai:"Florfenicol",use:"ফাউল কলেরা",dose:"১ মি.লি./২ লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Enrocin Solution",ai:"Enrofloxacin",use:"ফাউল কলেরা, ব্যাকটেরিয়া রোগ",dose:"১ মি.লি./২ লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Acemox",ai:"Amoxicillin",use:"পুলোরাম, টাইফয়েড, ব্যাকটেরিয়া রোগ",dose:"১ গ্রাম/৩ লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Neoren 50",ai:"Neomycin",use:"পুলোরাম, টাইফয়েড, Gut infection",dose:"১ গ্রাম/২ লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Cotra Vet",ai:"Chlortetracycline",use:"CRD, ফাউল পক্স, Mycoplasma",dose:"১ গ্রাম/লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Mycostop Powder",ai:"Tylosin",use:"CRD, Mycoplasma",dose:"২.৫ গ্রাম/লিটার পানিতে",dur:"৫ দিন",type:"tg-ab"},
+  {nm:"Coctreat EP",ai:"Amprolium",use:"কক্সিডিওসিস (প্রাথমিক পর্যায়)",dose:"১ গ্রাম/লিটার পানিতে",dur:"৩-৫ দিন",type:"tg-pr"},
+  {nm:"Coxitril Vet",ai:"Toltrazuril",use:"কক্সিডিওসিস (তীব্র পর্যায়)",dose:"১ মি.লি./লিটার পানিতে",dur:"৪৮ ঘণ্টা",type:"tg-pr"},
+  {nm:"Piper Vet Powder",ai:"Piperazine Citrate",use:"বড় ও ছোট গোলকৃমি",dose:"১০ গ্রাম/৬ লি. পানিতে বা ৩.৫ কেজি খাদ্যে",dur:"এককালীন",type:"tg-pr"},
+  {nm:"Elcaris Vet Powder",ai:"Levamisole HCl",use:"বড় ও ছোট গোলকৃমি",dose:"১ গ্রাম/লিটার পানিতে",dur:"এককালীন",type:"tg-pr"},
+  {nm:"Immolyte Liquid",ai:"Immunopotentiator",use:"বার্ড ফ্লু, রোগ প্রতিরোধ ক্ষমতা বাড়ানো",dose:"১ মি.লি./লিটার, দিনে ২ বার",dur:"৫ দিন",type:"tg-sp"},
+  {nm:"Hameco pH",ai:"Acidifier",use:"পানির pH কমানো, জীবাণু নিয়ন্ত্রণ, পুলোরাম, কলেরা",dose:"১ মি.লি./লিটার পানিতে, দিনে ২ বার",dur:"৫ দিন",type:"tg-sp"},
+  {nm:"Electromin Powder",ai:"Electrolyte+Glucose",use:"ডিহাইড্রেশন, পোস্ট-ইনফেকশন সহায়তা",dose:"১ গ্রাম/২ লিটার পানিতে",dur:"৪-৫ দিন",type:"tg-sp"},
+  {nm:"Liva Vit Liquid",ai:"Liver Tonic",use:"অ্যান্টিবায়োটিক ব্যবহারের সময়, যকৃত সহায়তা",dose:"১ মি.লি./লিটার পানিতে",dur:"৫ দিন",type:"tg-sp"},
+  {nm:"Vit-AD3E Solution",ai:"Vitamin A+D3+E",use:"ভিটামিন অভাবজনিত রোগ",dose:"১ মি.লি./৪ লিটার পানিতে",dur:"৩-৫ দিন",type:"tg-vt"},
+  {nm:"Rena C",ai:"Vitamin C",use:"বার্ড ফ্লু, স্ট্রেস ব্যবস্থাপনা",dose:"২ মি.লি./লিটার পানিতে",dur:"৫ দিন",type:"tg-vt"},
+  {nm:"Prithi WS Powder",ai:"Vitamin B-Complex",use:"মারেক্স, ভিটামিন বি অভাব",dose:"১ গ্রাম/লিটার পানিতে",dur:"৩-৫ দিন",type:"tg-vt"},
+  {nm:"Timsen Powder",ai:"Disinfectant (Thymol)",use:"খামার জীবাণুমুক্তকরণ, লিটার ও ভেন্টিলেশন স্প্রে",dose:"১ গ্রাম/লিটার পানিতে, স্প্রে",dur:"প্রতিদিন",type:"tg-ds"},
+  {nm:"Viodin Vet",ai:"Povidone Iodine",use:"ফাউল পক্স ক্ষতস্থানে লাগানো, অ্যান্টিসেপটিক",dose:"১০ মি.লি./লিটার পানিতে",dur:"প্রয়োজনমতো",type:"tg-ds"},
+  {nm:"Two Plus Liquid",ai:"Toxin Binder",use:"মাইকোটক্সিকোসিস, এসপারজেলোসিস",dose:"১ মি.লি./লিটার পানিতে, দিনে ২ বার",dur:"৫ দিন",type:"tg-sp"},
+  {nm:"Copper Sulphate",ai:"Copper Sulphate",use:"এসপারজেলোসিস (অ্যান্টিফাঙ্গাল)",dose:"১ গ্রাম/২ লিটার পানিতে, দিনে ২ বার",dur:"৫ দিন",type:"tg-sp"},
+  {nm:"Respiron / Res Sol",ai:"Respiratory Stimulant",use:"CRD, করাইজা, IB, এসপারজেলোসিস",dose:"১ মি.লি./লিটার পানিতে",dur:"৩-৭ দিন",type:"tg-sp"}
+];
+
+/* ====== DRUG TYPE LABELS ====== */
+const DRUG_LABELS = {
+  'tg-ab': 'অ্যান্টিবায়োটিক',
+  'tg-sp': 'সহায়ক',
+  'tg-ds': 'জীবাণুনাশক',
+  'tg-vt': 'ভিটামিন',
+  'tg-pr': 'পরজীবীনাশক'
+};
+
+/* ====== TABS ====== */
+function showTab(name, btn) {
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.getElementById('panel-' + name).classList.add('active');
+  btn.classList.add('active');
+}
+
+/* ====== STATE ====== */
+let curCat = 'all', curSearch = '', curId = null;
+
+/* ====== BUILD DROPDOWN ====== */
+function buildDrop() {
+  const dd = document.getElementById('ddrop');
+  const saved = dd.value;
+  dd.innerHTML = '<option value="">— তালিকা থেকে বেছে নিন —</option>';
+  D.forEach(d => {
+    const o = document.createElement('option');
+    o.value = d.id;
+    o.textContent = d.name + (d.en ? ' (' + d.en + ')' : '');
+    dd.appendChild(o);
+  });
+  dd.value = saved;
+}
+
+/* ====== FILTER ====== */
+function getFiltered() {
+  let list = D;
+  if (curId) return list.filter(d => d.id === curId);
+  if (curCat !== 'all') list = list.filter(d => d.cat === curCat);
+  if (curSearch) {
+    const q = curSearch.toLowerCase();
+    list = list.filter(d =>
+      d.name.toLowerCase().includes(q) ||
+      (d.en || '').toLowerCase().includes(q) ||
+      d.cause.toLowerCase().includes(q) ||
+      d.sym.some(s => s.toLowerCase().includes(q)) ||
+      (d.kw || []).some(k => k.toLowerCase().includes(q))
+    );
+  }
+  return list;
+}
+
+/* ====== SEV TAG ====== */
+function sevTag(sev) {
+  return {
+    high: '<span class="dmtag dtag-high">⚠️ তীব্র মৃত্যুহার</span>',
+    med: '<span class="dmtag dtag-med">⚡ মধ্যম মাত্রা</span>',
+    low: '<span class="dmtag dtag-low">✅ কম মৃত্যুহার</span>'
+  }[sev] || '';
+}
+
+/* ====== CAT CLASS ====== */
+function catClass(cat) {
+  return { virus: 'cv2', bacteria: 'cb2', parasite: 'cp2', nutrition: 'cn2', other: 'co2' }[cat] || '';
+}
+
+/* ====== TREATMENT HTML ====== */
+function treatHtml(d) {
+  const mainItems = d.treat.map(t => `
+    <div class="ti">
+      <span class="tiico">${t.ic}</span>
+      <div><div class="tiname">${t.name}</div><div class="tidose">${t.dose}</div></div>
+    </div>`).join('');
+
+  const hasAlt = d.alt && d.alt.length > 0;
+  const altItems = hasAlt ? d.alt.map(t => `
+    <div class="ti">
+      <span class="tiico">${t.ic}</span>
+      <div><div class="tiname">${t.name}</div><div class="tidose">${t.dose}</div></div>
+    </div>`).join('') : '';
+
+  if (!hasAlt) {
+    return `<div class="tbox">${mainItems}</div>`;
+  }
+
+  const uid = d.id;
+  return `
+    <div class="ttabs" id="ttabs-${uid}">
+      <button class="ttab act" onclick="switchTreat('${uid}','main',this)">প্রাথমিক চিকিৎসা</button>
+      <button class="ttab" onclick="switchTreat('${uid}','alt',this)">বিকল্প চিকিৎসা</button>
+    </div>
+    <div id="tmain-${uid}" class="tbox">${mainItems}</div>
+    <div id="talt-${uid}" class="tbox" style="display:none">${altItems}</div>`;
+}
+
+/* ====== CARD TEMPLATE ====== */
+function card(d) {
+  const spreadHtml = d.spread.length
+    ? `<div class="cs"><div class="cst">📡 ছড়ানোর পথ</div><ul class="clist">${d.spread.map(s => `<li>${s}</li>`).join('')}</ul></div>`
+    : '';
+  const pmHtml = d.pm.length
+    ? `<div class="cs"><div class="cst">🔬 পোস্ট মর্টেম লক্ষণ</div><ul class="clist">${d.pm.map(s => `<li>${s}</li>`).join('')}</ul></div>`
+    : '';
+
+  return `<div class="dcard ${catClass(d.cat)} col" id="dc-${d.id}">
+    <div class="dhead" onclick="toggle('${d.id}')">
+      <div class="dico">${d.icon}</div>
+      <div style="flex:1"><div class="dtitle">${d.name}</div><div class="dsub">${d.en}</div></div>
+      <span class="dbadge">${d.badge}</span>
+    </div>
+    <div class="dmeta">
+      ${sevTag(d.sev)}
+      <span class="dmtag dtag-age">🕐 ${d.age}</span>
+      ${d.mort ? `<span class="dmtag" style="background:#f3e5f5;color:#6d2d9a">💀 মৃত্যু: ${d.mort}</span>` : ''}
+    </div>
+    <div class="dbody">
+      <div class="dcol">
+        <div class="cs"><div class="cst">⚗️ কারণ</div><div class="cbox">${d.cause}</div></div>
+        ${spreadHtml}
+        <div class="cs"><div class="cst">🩺 রোগের লক্ষণ</div><ul class="clist">${d.sym.map(s => `<li>${s}</li>`).join('')}</ul></div>
+        ${pmHtml}
+        <div class="cs"><div class="cst">💊 চিকিৎসা</div>${treatHtml(d)}</div>
+        <div class="cs"><div class="cst">🛡️ প্রতিরোধ</div><div class="pbox">${d.prev}</div></div>
+      </div>
+    </div>
+    <button class="dexpand" onclick="toggle('${d.id}')">
+      <span id="arr-${d.id}">▼</span> <span id="lbl-${d.id}">বিস্তারিত দেখুন</span>
+    </button>
+  </div>`;
+}
+
+/* ====== TOGGLE CARD ====== */
+function toggle(id) {
+  const c = document.getElementById('dc-' + id);
+  const isCol = c.classList.contains('col');
+  c.classList.toggle('col');
+  document.getElementById('arr-' + id).textContent = isCol ? '▲' : '▼';
+  document.getElementById('lbl-' + id).textContent = isCol ? 'সংক্ষেপ দেখুন' : 'বিস্তারিত দেখুন';
+}
+
+/* ====== SWITCH TREATMENT ====== */
+function switchTreat(id, type, btn) {
+  document.getElementById('tmain-' + id).style.display = type === 'main' ? '' : 'none';
+  document.getElementById('talt-' + id).style.display = type === 'alt' ? '' : 'none';
+  document.getElementById('ttabs-' + id).querySelectorAll('.ttab').forEach(b => b.classList.remove('act'));
+  btn.classList.add('act');
+}
+
+/* ====== RENDER ====== */
+function render() {
+  const filtered = getFiltered();
+  const grid = document.getElementById('dgrid');
+  const nr = document.getElementById('nores');
+  const ri = document.getElementById('rinfo');
+  const sr = document.getElementById('srow');
+
+  // Stats (always from full D)
+  const counts = { virus: 0, bacteria: 0, parasite: 0, nutrition: 0, other: 0 };
+  D.forEach(d => counts[d.cat] = (counts[d.cat] || 0) + 1);
+  sr.innerHTML = `
+    <div class="sbox"><span class="sbi">🦠</span><div><div class="sbn">${counts.virus}</div><div class="sbl">ভাইরাস</div></div></div>
+    <div class="sbox"><span class="sbi">🔬</span><div><div class="sbn">${counts.bacteria}</div><div class="sbl">ব্যাকটেরিয়া</div></div></div>
+    <div class="sbox"><span class="sbi">🪱</span><div><div class="sbn">${counts.parasite}</div><div class="sbl">পরজীবী</div></div></div>
+    <div class="sbox"><span class="sbi">🌿</span><div><div class="sbn">${counts.nutrition}</div><div class="sbl">পুষ্টিঘাটতি</div></div></div>
+    <div class="sbox"><span class="sbi">🍄</span><div><div class="sbn">${counts.other}</div><div class="sbl">অন্যান্য</div></div></div>
+    <div class="sbox"><span class="sbi">📋</span><div><div class="sbn">${D.length}</div><div class="sbl">মোট রোগ</div></div></div>
+  `;
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '';
+    nr.style.display = '';
+    ri.textContent = '';
+    return;
+  }
+  nr.style.display = 'none';
+  ri.textContent = filtered.length + 'টি রোগ পাওয়া গেছে';
+  grid.innerHTML = filtered.map(d => card(d)).join('');
+
+  const isSingle = filtered.length === 1 || curId;
+  grid.querySelectorAll('.dcard').forEach(c => {
+    if (isSingle) c.classList.remove('col');
+    else c.classList.add('col');
+  });
+
+  if (curId) {
+    setTimeout(() => {
+      const e = document.getElementById('dc-' + curId);
+      if (e) e.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }, 100);
+  }
+}
+
+/* ====== SEARCH / FILTER ====== */
+function setcat(cat, btn) {
+  curCat = cat; curId = null;
+  document.getElementById('ddrop').value = '';
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
+  btn.classList.add('on');
+  render();
+}
+
+function pickD(id) {
+  curId = id || null;
+  curSearch = '';
+  document.getElementById('sinp').value = '';
+  render();
+}
+
+document.getElementById('sinp').addEventListener('input', function () {
+  curSearch = this.value.trim();
+  curId = null;
+  document.getElementById('ddrop').value = '';
+  render();
+});
+
+/* ====== DRUG TABLE ====== */
+function buildDrugTable(q = '') {
+  const tb = document.getElementById('drugTbody');
+  const list = q
+    ? DRUGS.filter(d =>
+        d.nm.toLowerCase().includes(q) ||
+        d.ai.toLowerCase().includes(q) ||
+        d.use.toLowerCase().includes(q))
+    : DRUGS;
+  tb.innerHTML = list.map(d => `<tr>
+    <td><strong>${d.nm}</strong></td>
+    <td>${d.ai}</td>
+    <td>${d.use}</td>
+    <td>${d.dose}</td>
+    <td>${d.dur}</td>
+    <td><span class="dtg ${d.type}">${DRUG_LABELS[d.type] || d.type}</span></td>
+  </tr>`).join('');
+}
+
+document.getElementById('dsrch').addEventListener('input', function () {
+  buildDrugTable(this.value.toLowerCase());
+});
+
+/* ====== AI ASSISTANT ====== */
+const SYSPROMPT = `আপনি একজন বিশেষজ্ঞ পোল্ট্রি ভেটেরিনারি সহকারী। আপনাকে সর্বদা বাংলায় উত্তর দিতে হবে। আপনি হাঁস-মুরগির রোগ, চিকিৎসা, টিকা, পুষ্টি ও খামার ব্যবস্থাপনা বিষয়ে পরামর্শ দেন। উত্তর সংক্ষিপ্ত, স্পষ্ট ও ব্যবহারিক হতে হবে। প্রাসঙ্গিক ওষুধের নাম ও মাত্রা উল্লেখ করুন।`;
+let chatHistory = [];
+const aiChat = document.getElementById('aichat');
+
+function addMsg(text, isUser) {
+  const d = document.createElement('div');
+  d.className = 'cmsg ' + (isUser ? 'cuser' : 'cbot');
+  d.innerHTML = text
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/\n/g, '<br>')
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em>$1</em>');
+  aiChat.appendChild(d);
+  aiChat.scrollTop = aiChat.scrollHeight;
+  return d;
+}
+
+function addTyping() {
+  const d = document.createElement('div');
+  d.className = 'cmsg cbot';
+  d.id = 'typing-ind';
+  d.innerHTML = '<div class="typing"><span></span><span></span><span></span></div>';
+  aiChat.appendChild(d);
+  aiChat.scrollTop = aiChat.scrollHeight;
+  return d;
+}
+
+async function sendAI() {
+  const inp = document.getElementById('aiinp');
+  const btn = document.getElementById('aibtn');
+  const q = inp.value.trim();
+  if (!q) return;
+  inp.value = '';
+  btn.disabled = true;
+  addMsg(q, true);
+  chatHistory.push({ role: 'user', content: q });
+  const tp = addTyping();
+  try {
+    const resp = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1000,
+        system: SYSPROMPT,
+        messages: chatHistory
+      })
+    });
+    const data = await resp.json();
+    tp.remove();
+    const ans = data.content?.[0]?.text || 'দুঃখিত, উত্তর পাওয়া যায়নি।';
+    addMsg(ans, false);
+    chatHistory.push({ role: 'assistant', content: ans });
+    if (chatHistory.length > 20) chatHistory = chatHistory.slice(-20);
+  } catch (e) {
+    tp.remove();
+    addMsg('দুঃখিত, সংযোগে সমস্যা হয়েছে। আবার চেষ্টা করুন।', false);
+  }
+  btn.disabled = false;
+}
+
+function askQ(q) {
+  document.getElementById('aiinp').value = q;
+  showTab('ai', document.querySelectorAll('.tab')[4]);
+  setTimeout(sendAI, 200);
+}
+
+document.getElementById('aiinp').addEventListener('keydown', e => {
+  if (e.key === 'Enter') sendAI();
+});
+
+/* ====== INIT ====== */
+buildDrop();
+render();
+buildDrugTable();
+</script>
+</body>
+</html>
